@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-H:\Projet GitHub\EquiLog\obj\Debug\
+C:\Users\ketch\Documents\GitHub\EquiLog\obj\Debug\
 EquiLog
 none
 false
 DEBUG;TRACE
-H:\Projet GitHub\EquiLog\App.xaml
-2-419086188
+C:\Users\ketch\Documents\GitHub\EquiLog\App.xaml
+2-1235028000
 
-7167541711
+7-1024226719
 91659208413
-Login.xaml;MainWindow.xaml;
+MainWindow.xaml;Windows\Login.xaml;
 
-False
+True
 

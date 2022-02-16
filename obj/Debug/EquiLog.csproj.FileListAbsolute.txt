@@ -17,3 +17,5 @@ H:\Projet GitHub\EquiLog\obj\Debug\App.baml
 H:\Projet GitHub\EquiLog\obj\Debug\Login.g.cs
 H:\Projet GitHub\EquiLog\obj\Debug\Login.baml
 H:\Projet GitHub\EquiLog\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ketch\Documents\GitHub\EquiLog\obj\Debug\EquiLog.exe
+C:\Users\ketch\Documents\GitHub\EquiLog\obj\Debug\EquiLog.pdb
