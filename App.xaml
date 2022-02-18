@@ -2,9 +2,10 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:EquiLog"
-             StartupUri="Windows/Login.xaml">
+             StartupUri="Windows/Logiciel.xaml">
     <Application.Resources>
-         <Style x:Key="RoundCorner" TargetType="{x:Type Button}">
+        <FontFamily x:Key="FontAwesome">assets/fontawesome_regular.ttf#FontAwesome</FontFamily>
+        <Style x:Key="RoundCorner" TargetType="{x:Type Button}">
     <Setter Property="HorizontalContentAlignment" Value="Center"/>
     <Setter Property="VerticalContentAlignment" Value="Center"/>
     <Setter Property="Padding" Value="1"/>

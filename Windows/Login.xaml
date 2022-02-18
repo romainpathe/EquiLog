@@ -4,9 +4,105 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:EquiLog.Windows"
+        AllowsTransparency="True" Background="Transparent"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
+        Title="Login" 
+        Height="500" 
+        Width="350"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+    </Window.Resources>
     <Grid>
-        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="10" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="BlueViolet" Offset="0.0"/>
+                        <GradientStop Color="Aqua" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <StackPanel VerticalAlignment="Center">
+                <Image Source="https://www.romainpathe.com/documents/icone.png" Width="80"/>
+                <TextBlock Text="EquiLog"
+                           FontWeight="Light"
+                           FontFamily="helvetica"
+                           FontSize="22"
+                           Foreground="White"
+                           HorizontalAlignment="Center">
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Grid.Row="1" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             CaretBrush="White"
+                             Name="Login_Username"
+                             GotFocus="Login_Username_OnGotFocus"
+                             LostFocus="Login_Username_OnLostFocus"
+                             Text="Nom d'utilisateur"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25"
+                             Margin="63,0,0,0"/>
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5">
+                </Border>
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                    <PasswordBox FontFamily="Helvetica"
+                             FontWeight="Light"
+                             CaretBrush="White"
+                             Name="Login_Password"
+                             GotFocus="Login_Password_OnGotFocus"
+                             LostFocus="Login_Password_OnLostFocus"
+                             Password="Password"
+                             FontSize="20"
+                             HorizontalAlignment="Center"
+                             Foreground="White"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             Width="235"
+                             HorizontalContentAlignment="Left"
+                             Opacity="0.5"
+                             Height="25"
+                             Margin="63,0,0,0"/>
+                </StackPanel>
+                <Border Width="250"
+                        Height="2"
+                        Background="White"
+                        Opacity="0.5">
+                </Border>
+                <TextBlock Name="Login_Error" Margin="0,30,0,0" HorizontalAlignment="Center" Foreground="Red" Visibility="Hidden" FontSize="15" >Vos identifiants ne sont pas valide !</TextBlock>
+                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" Margin="0,20,0,0">
+                    <Button Name="Login_Button" Width="100" Height="40" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Connexion" FontSize="17" Click="Login_Button_OnClick" ClickMode="Press" Background="Transparent" >
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+                <StackPanel Opacity="0.7"  Name="RegistrationMessage" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBlock Opacity="0.7" Foreground="White" FontSize="14" Text="Si vous n'avez pas encore de compte, "/>
+                    <TextBlock Opacity="0.7" Margin="2,0,0,0" Text="cliquez ici" MouseLeftButtonDown="openRegister_MouseLeftButtonDown" Foreground="Blue" FontStyle="Italic" TextDecorations="Underline" FontSize="14"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

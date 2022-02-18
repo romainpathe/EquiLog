@@ -1,4 +1,6 @@
-﻿namespace EquiLog
+﻿using EquiLog.Classes;
+
+namespace EquiLog
 {
     /// <summary>
     /// Interaction logic for App.xaml
