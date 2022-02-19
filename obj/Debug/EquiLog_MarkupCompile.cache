@@ -9,12 +9,20 @@ EquiLog
 none
 false
 DEBUG;TRACE
+<<<<<<< Updated upstream
 C:\Users\emmie\Documents\GitHub\EquiLog\App.xaml
 3976692305
 51250493360
 12-1025858378
 20-1080152811
+=======
+C:\Users\ketch\Documents\GitHub\EquiLog\App.xaml
+3-1902468830
+5-31490708
+12305610386
+19180725651
+>>>>>>> Stashed changes
 Windows\Logiciel.xaml;Windows\Login.xaml;Windows\Register.xaml;
 
-False
+True
 

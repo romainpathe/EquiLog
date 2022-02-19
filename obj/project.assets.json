@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.8": {
-      "HamburgerMenu/0.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/HamburgerMenu.dll": {}
-        },
-        "runtime": {
-          "lib/net40/HamburgerMenu.dll": {}
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0-preview.1.22076.8": {
         "type": "package",
         "dependencies": {
@@ -153,15 +144,6 @@
       }
     },
     ".NETFramework,Version=v4.8/win": {
-      "HamburgerMenu/0.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/HamburgerMenu.dll": {}
-        },
-        "runtime": {
-          "lib/net40/HamburgerMenu.dll": {}
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0-preview.1.22076.8": {
         "type": "package",
         "dependencies": {
@@ -304,15 +286,6 @@
       }
     },
     ".NETFramework,Version=v4.8/win-x64": {
-      "HamburgerMenu/0.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/HamburgerMenu.dll": {}
-        },
-        "runtime": {
-          "lib/net40/HamburgerMenu.dll": {}
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0-preview.1.22076.8": {
         "type": "package",
         "dependencies": {
@@ -455,15 +428,6 @@
       }
     },
     ".NETFramework,Version=v4.8/win-x86": {
-      "HamburgerMenu/0.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/HamburgerMenu.dll": {}
-        },
-        "runtime": {
-          "lib/net40/HamburgerMenu.dll": {}
-        }
-      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0-preview.1.22076.8": {
         "type": "package",
         "dependencies": {
@@ -607,18 +571,6 @@
     }
   },
   "libraries": {
-    "HamburgerMenu/0.1.0": {
-      "sha512": "rVyKyIBf/9ykNqtAG6ljKfw4yMy+M1yCiDRQpewXF9hnbRptj1JN2gzA/d9Wnkol0lfbN+4K2Rns5wIbwk02OQ==",
-      "type": "package",
-      "path": "hamburgermenu/0.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "hamburgermenu.0.1.0.nupkg.sha512",
-        "hamburgermenu.nuspec",
-        "lib/net40/HamburgerMenu.dll"
-      ]
-    },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0-preview.1.22076.8": {
       "sha512": "0waLqOXARCZtlUnHn7KB2IcAWPdbZ6puHRwP8SNLyP2SfQn34QOUe16q0ucJm7hsNG7h8MMkQ6E8mSaN8S4pEA==",
       "type": "package",
@@ -941,7 +893,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
-      "HamburgerMenu >= 0.1.0",
       "Microsoft.Bcl.AsyncInterfaces >= 7.0.0-preview.1.22076.8",
       "System.Buffers >= 4.5.1",
       "System.Memory >= 4.5.4",
@@ -986,10 +937,6 @@
     "frameworks": {
       "net48": {
         "dependencies": {
-          "HamburgerMenu": {
-            "target": "Package",
-            "version": "[0.1.0, )"
-          },
           "Microsoft.Bcl.AsyncInterfaces": {
             "target": "Package",
             "version": "[7.0.0-preview.1.22076.8, )"
