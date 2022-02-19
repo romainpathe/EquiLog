@@ -905,20 +905,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\emmie\\.nuget\\packages\\": {}
+    "C:\\Users\\ketch\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emmie\\Documents\\GitHub\\EquiLog\\EquiLog.csproj",
+      "projectUniqueName": "C:\\Users\\ketch\\Documents\\GitHub\\EquiLog\\EquiLog.csproj",
       "projectName": "EquiLog",
-      "projectPath": "C:\\Users\\emmie\\Documents\\GitHub\\EquiLog\\EquiLog.csproj",
-      "packagesPath": "C:\\Users\\emmie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\emmie\\Documents\\GitHub\\EquiLog\\obj\\",
+      "projectPath": "C:\\Users\\ketch\\Documents\\GitHub\\EquiLog\\EquiLog.csproj",
+      "packagesPath": "C:\\Users\\ketch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ketch\\Documents\\GitHub\\EquiLog\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\emmie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ketch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

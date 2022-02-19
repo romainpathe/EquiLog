@@ -1,4 +1,5 @@
-﻿using EquiLog.Classes;
+﻿using System;
+using EquiLog.Classes;
 
 namespace EquiLog
 {
@@ -7,5 +8,10 @@ namespace EquiLog
     /// </summary>
     public partial class App
     {
+        public App()
+        {
+            Configuration_Controller.InitConfiguration();
+            Staff_controller.InitStaffList();
+        }
     }
 }

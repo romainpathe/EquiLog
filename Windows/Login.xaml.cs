@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
 using EquiLog.Classes;
-using EquiLog.Models;
 
 namespace EquiLog.Windows
 {
@@ -16,12 +14,10 @@ namespace EquiLog.Windows
         public Login()
         {
             InitializeComponent();
-            Configuration_Controller.InitConfiguration();
             if (!Configuration_Controller.config.RegistrationEnabled)
             {
                 RegistrationMessage.Visibility = Visibility.Hidden;
             }
-            Staff_controller.InitStaffList();
         }
 
         private void openRegister_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

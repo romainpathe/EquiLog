@@ -58,6 +58,7 @@
         <Compile Include="Controllers\Configuration.controller.cs" />
         <Compile Include="Controllers\Staff.controller.cs" />
         <Compile Include="Models\Configuration.model.cs" />
+        <Compile Include="Models\Equidea.model.cs" />
         <Compile Include="Models\Staff.model.cs" />
         <Compile Include="Windows\Logiciel.xaml.cs">
           <DependentUpon>Logiciel.xaml</DependentUpon>

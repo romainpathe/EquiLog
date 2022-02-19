@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using EquiLog.Classes;
 
 namespace EquiLog.Windows
 {
