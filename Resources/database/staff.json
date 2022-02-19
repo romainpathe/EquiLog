@@ -3,5 +3,11 @@
     "Id": 1,
     "Username": "Romain",
     "Password": "admin"
+  },
+
+  {
+    "Id": 2,
+    "Username": "Emmie",
+    "Password": "admin"
   }
 ]
