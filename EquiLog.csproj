@@ -57,9 +57,21 @@
         </ApplicationDefinition>
         <Compile Include="Controllers\Configuration.controller.cs" />
         <Compile Include="Controllers\Staff.controller.cs" />
+        <Compile Include="Controls\MenuItem.xaml.cs">
+          <DependentUpon>MenuItem.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Controls\UserPopup.xaml.cs">
+          <DependentUpon>UserPopup.xaml</DependentUpon>
+        </Compile>
         <Compile Include="Models\Configuration.model.cs" />
         <Compile Include="Models\Equidea.model.cs" />
         <Compile Include="Models\Staff.model.cs" />
+        <Compile Include="Pages\Home.xaml.cs">
+          <DependentUpon>Home.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Pages\Settings.xaml.cs">
+          <DependentUpon>Settings.xaml</DependentUpon>
+        </Compile>
         <Compile Include="Windows\Logiciel.xaml.cs">
           <DependentUpon>Logiciel.xaml</DependentUpon>
         </Compile>
@@ -75,6 +87,13 @@
         </Compile>
         <Compile Include="Classes\Equidae.cs" />
         <Compile Include="Classes\Rider.cs" />
+        <Page Include="Assets\Icons.xaml" />
+        <Page Include="Assets\Styles\DarkTheme.xaml" />
+        <Page Include="Assets\Styles\MainStyle.xaml" />
+        <Page Include="Controls\MenuItem.xaml" />
+        <Page Include="Controls\UserPopup.xaml" />
+        <Page Include="Pages\Home.xaml" />
+        <Page Include="Pages\Settings.xaml" />
         <Page Include="Windows\Logiciel.xaml" />
         <Page Include="Windows\Login.xaml" />
         <Page Include="Windows\Register.xaml" />
@@ -97,17 +116,16 @@
         <None Include="App.config" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Pages" />
-      <Folder Include="UserControls" />
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="assets\icone.ico" />
-      <Content Include="assets\icone.png" />
-      <Content Include="assets\icone_transparent.ico" />
+      <Content Include="Assets\icone.ico" />
+      <Resource Include="Assets\icone.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Resource>
+      <Content Include="Assets\icone_transparent.ico" />
       <Content Include="Resources\config.json" />
       <Content Include="Resources\database\staff.json" />
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="MaterialDesignThemes" Version="4.4.0-ci94" />
       <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0-preview.1.22076.8" />
       <PackageReference Include="System.Buffers" Version="4.5.1" />
       <PackageReference Include="System.Memory" Version="4.5.4" />

@@ -1,13 +1,10 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
+﻿using System.IO;
 using System.Text.Json;
-using System.Windows;
 using EquiLog.Models;
 
 namespace EquiLog.Classes
 {
-    public class Configuration_Controller
+    public static class Configuration_Controller
     {
         //public static Visibility RegistrationEnabled { get; private set; } = Visibility.Visible;
         public static Configuration_model config;

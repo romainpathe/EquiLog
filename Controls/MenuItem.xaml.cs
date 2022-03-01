@@ -13,8 +13,8 @@ namespace EquiLog.Controls
 
         public PathGeometry Icon
         {
-            get { return (PathGeometry)GetValue(IconProperty); }
-            set { SetValue(IconProperty, value); }
+            get => (PathGeometry)GetValue(IconProperty);
+            set => SetValue(IconProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for Icon.  This enables animation, styling, binding, etc...
@@ -25,8 +25,8 @@ namespace EquiLog.Controls
 
         public int IconWidth
         {
-            get { return (int)GetValue(IconWidthProperty); }
-            set { SetValue(IconWidthProperty, value); }
+            get => (int)GetValue(IconWidthProperty);
+            set => SetValue(IconWidthProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for IconWidth.  This enables animation, styling, binding, etc...
@@ -37,8 +37,8 @@ namespace EquiLog.Controls
 
         public SolidColorBrush IndicatorBrush
         {
-            get { return (SolidColorBrush)GetValue(IndicatorBrushProperty); }
-            set { SetValue(IndicatorBrushProperty, value); }
+            get => (SolidColorBrush)GetValue(IndicatorBrushProperty);
+            set => SetValue(IndicatorBrushProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for IndicatorBrush.  This enables animation, styling, binding, etc...
@@ -49,8 +49,8 @@ namespace EquiLog.Controls
 
         public int IndicatorIndicatorCornerRadius
         {
-            get { return (int)GetValue(IndicatorIndicatorCornerRadiusProperty); }
-            set { SetValue(IndicatorIndicatorCornerRadiusProperty, value); }
+            get => (int)GetValue(IndicatorIndicatorCornerRadiusProperty);
+            set => SetValue(IndicatorIndicatorCornerRadiusProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for IndicatorIndicatorCornerRadius.  This enables animation, styling, binding, etc...
@@ -61,8 +61,8 @@ namespace EquiLog.Controls
 
         public string Text
         {
-            get { return (string)GetValue(TextProperty); }
-            set { SetValue(TextProperty, value); }
+            get => (string)GetValue(TextProperty);
+            set => SetValue(TextProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for Text.  This enables animation, styling, binding, etc...
@@ -73,20 +73,20 @@ namespace EquiLog.Controls
 
         public new Thickness Padding
         {
-            get { return (Thickness)GetValue(PaddingProperty); }
-            set { SetValue(PaddingProperty, value); }
+            get => (Thickness)GetValue(PaddingProperty);
+            set => SetValue(PaddingProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for Padding.  This enables animation, styling, binding, etc...
-        public static new readonly DependencyProperty PaddingProperty =
+        public new static readonly DependencyProperty PaddingProperty =
             DependencyProperty.Register("Padding", typeof(Thickness), typeof(MenuItem));
 
 
 
         public bool IsSelected
         {
-            get { return (bool)GetValue(IsSelectedProperty); }
-            set { SetValue(IsSelectedProperty, value); }
+            get => (bool)GetValue(IsSelectedProperty);
+            set => SetValue(IsSelectedProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for IsSelected.  This enables animation, styling, binding, etc...
@@ -97,8 +97,8 @@ namespace EquiLog.Controls
 
         public string GroupName
         {
-            get { return (string)GetValue(GroupNameProperty); }
-            set { SetValue(GroupNameProperty, value); }
+            get => (string)GetValue(GroupNameProperty);
+            set => SetValue(GroupNameProperty, value);
         }
 
         // Using a DependencyProperty as the backing store for GroupName.  This enables animation, styling, binding, etc...
