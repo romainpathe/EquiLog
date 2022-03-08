@@ -13,8 +13,7 @@
         FontFamily="Poppins"
         WindowState="Maximized">
    
-            <Border Background="{DynamicResource PrimaryBackgroundColor}"
-            CornerRadius="8">
+            <Border Background="{DynamicResource PrimaryBackgroundColor}">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
@@ -22,8 +21,7 @@
             </Grid.ColumnDefinitions>
 
             <Border Grid.Column="0"
-                    Background="{DynamicResource SecundaryBackgroundColor}"
-                    CornerRadius="8 0 0 8">
+                    Background="{DynamicResource SecundaryBackgroundColor}">
                 <Grid x:Name="GridNav" Width="60">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="60"/>
@@ -54,8 +52,8 @@
                         <Button x:Name="btnHome" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnHome_MouseEnter" MouseLeave="btnHome_MouseLeave" Click="btnHome_Click">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource home}" IconWidth="16" Text="Home" VerticalAlignment="Center"/>
                         </Button>
-                        <Button x:Name="btnDashboard" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnDashboard_MouseEnter" MouseLeave="btnDashboard_MouseLeave">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Dashboard" VerticalAlignment="Center"/>
+                        <Button x:Name="btnStaff" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnStaff_MouseEnter" MouseLeave="btnStaff_MouseLeave" Click="BtnStaff_OnClick">
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Staff" VerticalAlignment="Center"/>
                         </Button>
                         <Button x:Name="btnProducts" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnProducts_MouseEnter" MouseLeave="btnProducts_MouseLeave">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Products" VerticalAlignment="Center"/>

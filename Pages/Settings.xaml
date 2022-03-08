@@ -7,7 +7,20 @@
       mc:Ignorable="d"
       Title="Settings">
     <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
-        <TextBlock Text="Settings" FontSize="30" Foreground="{DynamicResource PrimaryTextColor}" FontWeight="Bold"
-                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Margin="10" HorizontalAlignment="Center">
+                <Label FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}">Application option</Label>
+                <CheckBox x:Name="RegistrationCheckBox" Checked="RegistrationCheckBox_Checked" Unchecked="RegistrationCheckBox_Checked">
+                    <TextBlock Foreground="{DynamicResource PrimaryTextColor}">
+                        Register 
+                    </TextBlock>
+                </CheckBox>
+            </StackPanel>
+        </Grid>
     </Border>
 </Page>

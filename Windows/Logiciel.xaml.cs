@@ -36,18 +36,18 @@ namespace EquiLog.Windows
             Popup.IsOpen = false;
         }
 
-        private void btnDashboard_MouseEnter(object sender, MouseEventArgs e)
+        private void btnStaff_MouseEnter(object sender, MouseEventArgs e)
         {
             if (Tg_Btn.IsChecked == false)
             {
-                Popup.PlacementTarget = btnDashboard;
+                Popup.PlacementTarget = btnStaff;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Dashboard";
+                Header.PopupText.Text = "Staff";
             }
         }
 
-        private void btnDashboard_MouseLeave(object sender, MouseEventArgs e)
+        private void btnStaff_MouseLeave(object sender, MouseEventArgs e)
         {
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;
@@ -189,5 +189,10 @@ namespace EquiLog.Windows
             fContainer.Navigate(new System.Uri("../Pages/Settings.xaml", UriKind.RelativeOrAbsolute));
         }
 
+
+        private void BtnStaff_OnClick(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("../Pages/Staff.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }

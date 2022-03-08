@@ -72,6 +72,9 @@
         <Compile Include="Pages\Settings.xaml.cs">
           <DependentUpon>Settings.xaml</DependentUpon>
         </Compile>
+        <Compile Include="Pages\Staff.xaml.cs">
+          <DependentUpon>Staff.xaml</DependentUpon>
+        </Compile>
         <Compile Include="Windows\Logiciel.xaml.cs">
           <DependentUpon>Logiciel.xaml</DependentUpon>
         </Compile>
@@ -94,6 +97,7 @@
         <Page Include="Controls\UserPopup.xaml" />
         <Page Include="Pages\Home.xaml" />
         <Page Include="Pages\Settings.xaml" />
+        <Page Include="Pages\Staff.xaml" />
         <Page Include="Windows\Logiciel.xaml" />
         <Page Include="Windows\Login.xaml" />
         <Page Include="Windows\Register.xaml" />
