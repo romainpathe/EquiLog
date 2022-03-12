@@ -38,6 +38,7 @@
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="mscorlib" />
+        <Reference Include="PresentationFramework.Aero2" />
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
@@ -92,6 +93,7 @@
         <Compile Include="Classes\Rider.cs" />
         <Page Include="Assets\Icons.xaml" />
         <Page Include="Assets\Styles\DarkTheme.xaml" />
+        <Page Include="Assets\Styles\ListViewStyle.xaml" />
         <Page Include="Assets\Styles\MainStyle.xaml" />
         <Page Include="Controls\MenuItem.xaml" />
         <Page Include="Controls\UserPopup.xaml" />

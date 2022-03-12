@@ -3,6 +3,7 @@
     <!-- Background Colors -->
     <SolidColorBrush x:Key="PrimaryBackgroundColor" Color="#131725"/>
     <SolidColorBrush x:Key="SecundaryBackgroundColor" Color="#1d2335"/>
+    <SolidColorBrush x:Key="TertiaryBackgroundColor" Color="#181D2D"/>
 
     <!-- Primary Colors -->
     <SolidColorBrush x:Key="PrimaryBlueColor" Color="#3772FF"/>

@@ -12,7 +12,8 @@
                 <ResourceDictionary Source="Assets/Icons.xaml"/>
 
                 <ResourceDictionary Source="assets/Styles/MainStyle.xaml"/>
-
+                
+                <ResourceDictionary Source="Assets/Styles/ListViewStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

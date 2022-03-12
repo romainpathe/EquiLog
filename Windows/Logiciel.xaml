@@ -10,8 +10,7 @@
         Background="Transparent" 
         AllowsTransparency="True"
         ResizeMode="NoResize" 
-        FontFamily="Poppins"
-        WindowState="Maximized">
+        FontFamily="Poppins">
    
             <Border Background="{DynamicResource PrimaryBackgroundColor}">
         <Grid>
