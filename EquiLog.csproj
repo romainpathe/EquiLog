@@ -73,14 +73,20 @@
         <Compile Include="Pages\Settings.xaml.cs">
           <DependentUpon>Settings.xaml</DependentUpon>
         </Compile>
-        <Compile Include="Pages\Staff.xaml.cs">
-          <DependentUpon>Staff.xaml</DependentUpon>
+        <Compile Include="Pages\Staff\Add.xaml.cs">
+          <DependentUpon>Add.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Pages\Staff\Index.xaml.cs">
+          <DependentUpon>Index.xaml</DependentUpon>
         </Compile>
         <Compile Include="Windows\Logiciel.xaml.cs">
           <DependentUpon>Logiciel.xaml</DependentUpon>
         </Compile>
         <Compile Include="Windows\Login.xaml.cs">
           <DependentUpon>Login.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Windows\Popups.xaml.cs">
+          <DependentUpon>Popups.xaml</DependentUpon>
         </Compile>
         <Compile Include="Windows\Register.xaml.cs">
           <DependentUpon>Register.xaml</DependentUpon>
@@ -99,9 +105,11 @@
         <Page Include="Controls\UserPopup.xaml" />
         <Page Include="Pages\Home.xaml" />
         <Page Include="Pages\Settings.xaml" />
-        <Page Include="Pages\Staff.xaml" />
+        <Page Include="Pages\Staff\Add.xaml" />
+        <Page Include="Pages\Staff\Index.xaml" />
         <Page Include="Windows\Logiciel.xaml" />
         <Page Include="Windows\Login.xaml" />
+        <Page Include="Windows\Popups.xaml" />
         <Page Include="Windows\Register.xaml" />
     </ItemGroup>
     <ItemGroup>

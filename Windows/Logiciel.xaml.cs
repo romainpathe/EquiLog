@@ -10,7 +10,7 @@ namespace EquiLog.Windows
         public Logiciel()
         {
             InitializeComponent();
-            fContainer.Navigate(new System.Uri("../Pages/Home.xaml", UriKind.RelativeOrAbsolute));
+            fContainer.Navigate(new System.Uri("../Pages/Staff/Index.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void BG_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -192,7 +192,7 @@ namespace EquiLog.Windows
 
         private void BtnStaff_OnClick(object sender, RoutedEventArgs e)
         {
-            fContainer.Navigate(new System.Uri("../Pages/Staff.xaml", UriKind.RelativeOrAbsolute));
+            fContainer.Navigate(new System.Uri("../Pages/Staff/Index.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

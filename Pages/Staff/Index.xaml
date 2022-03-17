@@ -1,11 +1,11 @@
-﻿<Page x:Class="EquiLog.Pages.Staff"
+﻿<Page x:Class="EquiLog.Pages.Staff.Index"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:EquiLog.Pages"
+      xmlns:local="clr-namespace:EquiLog.Pages.Staff"
       mc:Ignorable="d"
-      Title="Staff">
+      Title="Index">
     <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
         
         <Grid>
@@ -24,7 +24,8 @@
                         <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" />
                     </GridView>
                 </ListView.View>
-            </ListView>            
+            </ListView>      
+            <Button Grid.Row="1" Click="ButtonBase_OnClick">TEST</Button>
         </Grid>
 
         
