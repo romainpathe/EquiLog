@@ -57,6 +57,7 @@
             <SubType>Designer</SubType>
         </ApplicationDefinition>
         <Compile Include="Controllers\Configuration.controller.cs" />
+        <Compile Include="Controllers\Rider.controller.cs" />
         <Compile Include="Controllers\Staff.controller.cs" />
         <Compile Include="Controls\MenuItem.xaml.cs">
           <DependentUpon>MenuItem.xaml</DependentUpon>
@@ -147,6 +148,7 @@
       </Resource>
       <Content Include="Assets\icone_transparent.ico" />
       <Content Include="Resources\config.json" />
+      <Content Include="Resources\database\rider.json" />
       <Content Include="Resources\database\staff.json" />
     </ItemGroup>
     <ItemGroup>

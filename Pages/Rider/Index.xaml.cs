@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using EquiLog.Controllers;
 using EquiLog.Windows;
 
 namespace EquiLog.Pages.Rider
@@ -9,6 +10,7 @@ namespace EquiLog.Pages.Rider
         public Index()
         {
             InitializeComponent();
+            dgUsers.ItemsSource = Rider_controller.riderList;
         }
 
         private void Btn_Add_OnClick(object sender, RoutedEventArgs e)

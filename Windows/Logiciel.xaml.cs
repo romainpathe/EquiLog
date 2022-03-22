@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
+using EquiLog.Controllers;
 
 namespace EquiLog.Windows
 {
@@ -10,6 +11,7 @@ namespace EquiLog.Windows
         public Logiciel()
         {
             InitializeComponent();
+            Rider_controller.InitRiderList();
             fContainer.Navigate(new System.Uri("../Pages/Staff/Index.xaml", UriKind.RelativeOrAbsolute));
         }
 
