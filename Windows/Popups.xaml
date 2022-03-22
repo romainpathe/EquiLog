@@ -13,24 +13,36 @@
         FontFamily="Poppins"
         WindowStartupLocation="CenterScreen"
         Deactivated="Popups_OnDeactivated">
-    <Grid>
         <Border Background="{DynamicResource PrimaryBackgroundColor}">
-            <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="20"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
+
+
                 <!-- Start: Button Close | Restore | Minimize -->
                 <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.RowSpan="2">
                     <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton"/>
                 </StackPanel>
                 <!-- End: Button Close | Restore | Minimize -->
+                
                 <Frame Grid.Row="1"
                        Name="fContainer"
                        Margin="20"
                        NavigationUIVisibility="Hidden">
                 </Frame>
+                
             </Grid>
+      
+
+
+        </Grid>
     </Border>
-    </Grid>
 </Window>

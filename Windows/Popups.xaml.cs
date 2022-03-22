@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows;
 
 namespace EquiLog.Windows
@@ -12,6 +13,7 @@ namespace EquiLog.Windows
         public Popups(string page)
         {
             InitializeComponent();
+
             fContainer.Navigate(new System.Uri(page, UriKind.RelativeOrAbsolute));
         }
         private void btnClose_Click(object sender, RoutedEventArgs e)
