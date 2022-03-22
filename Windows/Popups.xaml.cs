@@ -22,7 +22,7 @@ namespace EquiLog.Windows
         private void Popups_OnDeactivated(object sender, EventArgs e)
         {
             var x = (Window) sender;
-            x.Close();
+            x.Visibility = Visibility.Hidden;
         }
     }
 }

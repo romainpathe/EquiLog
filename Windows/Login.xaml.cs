@@ -62,7 +62,7 @@ namespace EquiLog.Windows
             Login_Button.IsEnabled = false;
             try
             {
-                var userData = Staff_controller.staffList.First(i => i.Password == Login_Password.Password && i.Username == Login_Username.Text);
+                var userData = Staff_controller.staffList.First(i => i.Password == Login_Password.Password && i.Username() == Login_Username.Text);
                 Staff_controller.actifUserId = userData.Id;
                 new Logiciel().Show();
                 Close();

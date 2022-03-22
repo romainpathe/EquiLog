@@ -1,12 +1,14 @@
 ﻿[
   {
     "Id": 1,
-    "Username": "Romain",
+    "Firstname": "Romain",
+    "Lastname": "Pathe",
     "Password": "admin"
   },
   {
     "Id": 2,
-    "Username": "Emmie",
+    "Firstname": "Emmie",
+    "Lastname": "Bourassin",
     "Password": "admin"
   }
 ]

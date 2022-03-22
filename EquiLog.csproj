@@ -66,7 +66,10 @@
         </Compile>
         <Compile Include="Models\Configuration.model.cs" />
         <Compile Include="Models\Equidea.model.cs" />
+        <Compile Include="Models\Finances.model.cs" />
+        <Compile Include="Models\Rider.model.cs" />
         <Compile Include="Models\Staff.model.cs" />
+        <Compile Include="Models\Storage.model.cs" />
         <Compile Include="Pages\Home.xaml.cs">
           <DependentUpon>Home.xaml</DependentUpon>
         </Compile>

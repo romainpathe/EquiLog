@@ -15,17 +15,31 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
             <ListView Grid.Row="0" Grid.Column="0" Name="dgUsers" Margin="5">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn  Header="ID" DisplayMemberBinding="{Binding Id}" />
-                        <GridViewColumn Header="Username" DisplayMemberBinding="{Binding Username}" />
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
+                        <GridViewColumn Header="Prénom" DisplayMemberBinding="{Binding Firstname}" />
+                        <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Lastname}" />
+                        <GridViewColumn Header="Métier" DisplayMemberBinding="{Binding Job}" />
+                        <GridViewColumn Header="Heures*" DisplayMemberBinding="{Binding Hours}" />
+                        <GridViewColumn Header="Vacances**" DisplayMemberBinding="{Binding Holidays}" />
                     </GridView>
                 </ListView.View>
-            </ListView>      
-            <Button Grid.Row="1" Click="ButtonBase_OnClick">TEST</Button>
+            </ListView>
+            <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
+                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">*Nombre d'heures par semaine</TextBlock>
+                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">**Nombre de jour de vacances par ans</TextBlock>
+            </StackPanel>
+            <Button Grid.Column="1" Name="Btn_Add" Width="150" Height="40" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un staff" FontSize="17" Click="Btn_Add_OnClick" ClickMode="Press" Background="Transparent" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </Grid>
 
         

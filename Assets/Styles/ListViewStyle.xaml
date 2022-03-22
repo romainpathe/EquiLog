@@ -11,7 +11,7 @@
         <Setter Property="Foreground" Value="{DynamicResource PrimaryTextColor}"></Setter>
         <Setter Property="BorderBrush" Value="{DynamicResource TertiaryBackgroundColor}"></Setter>
         <Setter Property="Height" Value="30"></Setter>
-        <Setter Property="MinWidth" Value="40"></Setter>
+        <Setter Property="MinWidth" Value="80"></Setter>
         <Setter Property="IsHitTestVisible" Value="False"></Setter>
 
     </Style>
