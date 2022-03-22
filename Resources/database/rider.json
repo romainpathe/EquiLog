@@ -1,10 +1,1 @@
-﻿[
-  {
-    "Id": 1,
-    "Firstname": "Romain",
-    "Lastname": "Pathe",
-    "Phone": "0654956059",
-    "Email": "contact@romainpathe.com",
-    "Course": 1
-  }
-]
+[{"Id":1,"Firstname":"Romain","Lastname":"Pathe","Email":"contact@romainpathe.com","Phone":"0654956059","Course":1,"Level":null},{"Id":1,"Firstname":"Pr\u00E9nom","Lastname":"Nom","Email":"exemple@me.com","Phone":"0934934","Course":1,"Level":"Galop 2"}]
