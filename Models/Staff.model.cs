@@ -15,6 +15,17 @@
         
         public int Holidays { get; set; }
 
+        public Staff_model(int id, string firstname, string lastname, string password, string job, int hours, int holidays)
+        {
+            Id = id;
+            Firstname = firstname;
+            Lastname = lastname;
+            Password = password;
+            Job = job;
+            Hours = hours;
+            Holidays = holidays;
+        }
+        
         public string Username()
         {
             return Firstname + "." + Lastname[0];

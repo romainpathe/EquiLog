@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Title="Add" Height="450" Width="800">
     <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
-        <Grid ShowGridLines="True">
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
@@ -20,27 +20,32 @@
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" Grid.Column="0" Text="Nom : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16"/>
-            <TextBox Grid.Row="0" Grid.Column="1" x:Name="nom" TextWrapping="Wrap" Text="Nom" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="lastname" TextWrapping="Wrap" Text="Nom" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
             <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Prénom : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  Height="18" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="prenom" TextWrapping="Wrap" Text="Prénom" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="firstname" TextWrapping="Wrap" Text="Prénom" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
             <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Emploi : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-            <ComboBox Grid.Row="2" Grid.Column="1" x:Name="emploi" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18">
+            <ComboBox Grid.Row="2" Grid.Column="1" x:Name="job" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18">
                 <ComboBoxItem>Palefrenier</ComboBoxItem>
                 <ComboBoxItem>Moniteur</ComboBoxItem>
                 <ComboBoxItem>Maréchal</ComboBoxItem>
                 <ComboBoxItem>Soigneur</ComboBoxItem>
                 <ComboBoxItem>Administratif</ComboBoxItem>
             </ComboBox>
-            <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Heures : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" Grid.Column="1" x:Name="heures" TextWrapping="Wrap" Text="36h" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
-            <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Congés : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
-            <TextBox Grid.Row="4" Grid.Column="1" x:Name="conges" TextWrapping="Wrap" Text="6 semaines" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Heures* : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="hours" TextWrapping="Wrap" Text="36" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Vacances** : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
+            <TextBox Grid.Row="4" Grid.Column="1" x:Name="holidays" TextWrapping="Wrap" Text="6" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
             <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Mot de Passe : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
             <TextBox Grid.Row="5" Grid.Column="1" x:Name="password" TextWrapping="Wrap" Text="*********" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
-            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,57,317,133" Grid.ColumnSpan="2"/>
+            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,57,317,133" Grid.ColumnSpan="2" Click="ButtonBase_OnClick"/>
+            <StackPanel Grid.Row="6" Grid.Column="0" Margin="10">
+                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">*Nombre d'heures par semaine</TextBlock>
+                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">**Nombre de jour de vacances par ans</TextBlock>
+            </StackPanel>
         </Grid>
     </Border>
 </Page>
