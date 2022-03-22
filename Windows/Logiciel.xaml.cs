@@ -53,18 +53,18 @@ namespace EquiLog.Windows
             Popup.IsOpen = false;
         }
 
-        private void btnProducts_MouseEnter(object sender, MouseEventArgs e)
+        private void btnRiders_MouseEnter(object sender, MouseEventArgs e)
         {
             if (Tg_Btn.IsChecked == false)
             {
-                Popup.PlacementTarget = btnProducts;
+                Popup.PlacementTarget = btnRiders;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Products";
+                Header.PopupText.Text = "Riders";
             }
         }
 
-        private void btnProducts_MouseLeave(object sender, MouseEventArgs e)
+        private void btnRiders_MouseLeave(object sender, MouseEventArgs e)
         {
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;
@@ -194,5 +194,10 @@ namespace EquiLog.Windows
         {
             fContainer.Navigate(new System.Uri("../Pages/Staff/Index.xaml", UriKind.RelativeOrAbsolute));
         }
+        private void BtnRiders_OnClick(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("../Pages/Rider/Index.xaml", UriKind.RelativeOrAbsolute));
+        }
+        
     }
 }
