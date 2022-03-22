@@ -13,37 +13,36 @@
         FontFamily="Poppins"
         WindowStartupLocation="CenterScreen"
         Deactivated="Popups_OnDeactivated">
-    <Grid>
-        <Border Background="{DynamicResource SecundaryBackgroundColor}">
-            <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Nom : " Foreground="White" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="35,29,0,0"/>
-                <TextBox x:Name="nom" TextWrapping="Wrap" Text="Nom" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,10,0,0" Height="18"/>
-                <TextBlock TextWrapping="Wrap" Text="Prénom : " Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="35,20,0,0"/>
-                <TextBox x:Name="prenom" TextWrapping="Wrap" Text="Prénom" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,10,0,0" Height="18"/>
-                <TextBlock TextWrapping="Wrap" Text="Emploi : " Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="35,20,0,0"/>
+        <Border Background="{DynamicResource PrimaryBackgroundColor}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+
+                <!-- Start: Button Close | Restore | Minimize -->
+                <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft" Grid.RowSpan="2">
+                    <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Click="btnClose_Click" Tag="IsCloseButton"/>
+                </StackPanel>
+                <!-- End: Button Close | Restore | Minimize -->
                 
-                <ComboBox x:Name="emploi" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,10,0,0" Height="18">
-                    <ComboBoxItem>Palefrenier</ComboBoxItem>
-                    <ComboBoxItem>Moniteur</ComboBoxItem>
-                    <ComboBoxItem>Maréchal</ComboBoxItem>
-                    <ComboBoxItem>Soigneur</ComboBoxItem>
-                    <ComboBoxItem>Administratif</ComboBoxItem>
-                </ComboBox>
-                <TextBlock TextWrapping="Wrap" Text="Heures : " Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="35,20,0,0"/>
-                <TextBox x:Name="heures" TextWrapping="Wrap" Text="36h" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,10,0,0" Height="18"/>
-                <TextBlock TextWrapping="Wrap" Text="Congés : " Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="35,20,0,0"/>
-                <TextBox x:Name="conges" TextWrapping="Wrap" Text="6 semaines" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,10,0,0" Height="18"/>
-                <TextBlock TextWrapping="Wrap" Text="Mot de Passe : " Foreground="White" FontSize="14" HorizontalAlignment="Left" Margin="35,20,0,0"/>
-                <TextBox x:Name="password" TextWrapping="Wrap" Text="*********" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,10,0,0" Height="18"/>
-                <Button Content="Valider" Width="166"/>
+                <Frame Grid.Row="1"
+                       Name="fContainer"
+                       Margin="20"
+                       NavigationUIVisibility="Hidden">
+                </Frame>
+                
+            </Grid>
+      
 
 
-
-
-            </StackPanel>
-           
-            
-            
-        </Border>
-    </Grid>
+        </Grid>
+    </Border>
 </Window>
