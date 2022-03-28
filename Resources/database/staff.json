@@ -1,14 +1,3 @@
-﻿[
-  {
-    "Id": 1,
-    "Firstname": "Romain",
-    "Lastname": "Pathe",
-    "Password": "admin"
-  },
-  {
-    "Id": 2,
-    "Firstname": "Emmie",
-    "Lastname": "Bourassin",
-    "Password": "admin"
-  }
+[
+  {"Id":1,"Password":"admin","Lastname":"Pathe","Firstname":"Romain","Job":null,"Hours":0,"Holidays":0},{"Id":2,"Password":"admin","Lastname":"Bourassin","Firstname":"Emmie","Job":null,"Hours":0,"Holidays":0}
 ]

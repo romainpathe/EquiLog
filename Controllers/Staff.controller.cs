@@ -17,5 +17,20 @@ namespace EquiLog
             srConfig.Close();
         }
         
+        private static void UpdateStaffList()
+        {
+            var jsonConfigString = JsonSerializer.Serialize(staffList);
+            var swConfig = new StreamWriter("../../Resources/database/staff.json");
+            swConfig.Write(jsonConfigString);
+            swConfig.Close();
+        }
+
+        public static void AddStaff(string firstname, string lastname, string password, string job, int hours, int holidays)
+        {
+            staffList.Add(new Staff_model(staffList.Count, firstname,lastname,password,job,hours,holidays));
+            UpdateStaffList();
+        }
+        
+        
     }
 }

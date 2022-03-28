@@ -5,9 +5,9 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:EquiLog.Pages.Rider"
       mc:Ignorable="d"
-      Title="Add" Height="450" Width="800">
+      Title="Add">
     <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
-        <Grid ShowGridLines="True">
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
@@ -18,15 +18,17 @@
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="Nom : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,11" />
-            <TextBox Grid.Row="0" Grid.Column="1" x:Name="nom" TextWrapping="Wrap" Text="Nom" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="lastname" TextWrapping="Wrap" Text="Nom" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
             <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Prénom : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  Height="18" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="prenom" TextWrapping="Wrap" Text="Prénom" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18" Margin="0,0,0,11"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="firstname" TextWrapping="Wrap" Text="Prénom" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18" Margin="0,0,0,11"/>
             <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Galops : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
-            <ComboBox Grid.Row="2" Grid.Column="1" x:Name="emploi" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18">
+            <ComboBox Grid.Row="2" Grid.Column="1" x:Name="level" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18">
+                <ComboBoxItem>Aucun Galops</ComboBoxItem>
                 <ComboBoxItem>Galop 1</ComboBoxItem>
                 <ComboBoxItem>Galop 2</ComboBoxItem>
                 <ComboBoxItem>Galop 3</ComboBoxItem>
@@ -34,12 +36,16 @@
                 <ComboBoxItem>Galop 5</ComboBoxItem>
                 <ComboBoxItem>Galop 6</ComboBoxItem>
                 <ComboBoxItem>Galop 7</ComboBoxItem>
+                <ComboBoxItem>Galop 8</ComboBoxItem>
+                <ComboBoxItem>Galop 9</ComboBoxItem>
             </ComboBox>
             <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Email : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
-            <TextBox Grid.Row="3" Grid.Column="1" x:Name="heures" TextWrapping="Wrap" Text="exemple@me.com" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18" Margin="0,0,0,11"/>
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="email" TextWrapping="Wrap" Text="exemple@me.com" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18" Margin="0,0,0,11"/>
             <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Numéro de téléphone : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="4" Grid.Column="1" x:Name="conges" TextWrapping="Wrap" Text="6 semaines" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
-            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,10,317,122" Grid.ColumnSpan="2" Height="20"/>
+            <TextBox Grid.Row="4" Grid.Column="1" x:Name="phone" TextWrapping="Wrap" Text="" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Nombre de cours par mois" Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="5" Grid.Column="1" x:Name="course" TextWrapping="Wrap" Text="" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,10,317,122" Grid.ColumnSpan="2" Grid.Column="0" Click="ButtonBase_OnClick" Height="20"/>
         </Grid>
     </Border>
 
