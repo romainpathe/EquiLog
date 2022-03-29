@@ -71,6 +71,12 @@
         <Compile Include="Models\Rider.model.cs" />
         <Compile Include="Models\Staff.model.cs" />
         <Compile Include="Models\Storage.model.cs" />
+        <Compile Include="Pages\Equidea\Add.xaml.cs">
+          <DependentUpon>Add.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Pages\Equidea\Index.xaml.cs">
+          <DependentUpon>Index.xaml</DependentUpon>
+        </Compile>
         <Compile Include="Pages\Home.xaml.cs">
           <DependentUpon>Home.xaml</DependentUpon>
         </Compile>
@@ -113,6 +119,8 @@
         <Page Include="Assets\Styles\MainStyle.xaml" />
         <Page Include="Controls\MenuItem.xaml" />
         <Page Include="Controls\UserPopup.xaml" />
+        <Page Include="Pages\Equidea\Add.xaml" />
+        <Page Include="Pages\Equidea\Index.xaml" />
         <Page Include="Pages\Home.xaml" />
         <Page Include="Pages\Rider\Add.xaml" />
         <Page Include="Pages\Rider\Index.xaml" />
@@ -162,9 +170,6 @@
       <PackageReference Include="System.Text.Json" Version="7.0.0-preview.1.22076.8" />
       <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
       <PackageReference Include="System.ValueTuple" Version="4.5.0" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Pages\Equidea" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

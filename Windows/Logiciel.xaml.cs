@@ -72,18 +72,18 @@ namespace EquiLog.Windows
             Popup.IsOpen = false;
         }
 
-        private void btnProductStock_MouseEnter(object sender, MouseEventArgs e)
+        private void btnEquidea_MouseEnter(object sender, MouseEventArgs e)
         {
             if (Tg_Btn.IsChecked == false)
             {
-                Popup.PlacementTarget = btnProductStock;
+                Popup.PlacementTarget = btnEquidea;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Product Stock";
+                Header.PopupText.Text = "Equidea";
             }
         }
 
-        private void btnProductStock_MouseLeave(object sender, MouseEventArgs e)
+        private void btnEquidea_MouseLeave(object sender, MouseEventArgs e)
         {
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;
@@ -200,6 +200,12 @@ namespace EquiLog.Windows
         {
             fContainer.Navigate(new System.Uri("../Pages/Rider/Index.xaml", UriKind.RelativeOrAbsolute));
         }
+        
+        private void BtnEquidea_OnClick(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("../Pages/Equidea/Index.xaml", UriKind.RelativeOrAbsolute));
+        }
+        
         
     }
 }
