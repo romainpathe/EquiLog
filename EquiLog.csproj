@@ -1,175 +1,176 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{89D6D541-A617-4B1E-B950-5D2A9AAF64B2}</ProjectGuid>
-        <OutputType>WinExe</OutputType>
-        <RootNamespace>EquiLog</RootNamespace>
-        <AssemblyName>EquiLog</AssemblyName>
-        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-        <FileAlignment>512</FileAlignment>
-        <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-        <WarningLevel>4</WarningLevel>
-        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-        <ApplicationIcon>assets/icone.ico</ApplicationIcon>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>full</DebugType>
-        <Optimize>false</Optimize>
-        <OutputPath>bin\Debug\</OutputPath>
-        <DefineConstants>DEBUG;TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-        <ApplicationIcon>assets/icone.ico</ApplicationIcon>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugType>pdbonly</DebugType>
-        <Optimize>true</Optimize>
-        <OutputPath>bin\Release\</OutputPath>
-        <DefineConstants>TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-        <ApplicationIcon>assets/icone.ico</ApplicationIcon>
-    </PropertyGroup>
-    <ItemGroup>
-        <Reference Include="mscorlib" />
-        <Reference Include="PresentationFramework.Aero2" />
-        <Reference Include="System" />
-        <Reference Include="System.Core" />
-        <Reference Include="System.Data" />
-        <Reference Include="System.Numerics" />
-        <Reference Include="System.Xml" />
-        <Reference Include="System.Xaml">
-            <RequiredTargetFramework>4.0</RequiredTargetFramework>
-        </Reference>
-        <Reference Include="WindowsBase" />
-        <Reference Include="PresentationCore" />
-        <Reference Include="PresentationFramework" />
-    </ItemGroup>
-    <ItemGroup>
-        <ApplicationDefinition Include="App.xaml">
-            <Generator>MSBuild:Compile</Generator>
-            <SubType>Designer</SubType>
-        </ApplicationDefinition>
-        <Compile Include="Controllers\Configuration.controller.cs" />
-        <Compile Include="Controllers\Rider.controller.cs" />
-        <Compile Include="Controllers\Staff.controller.cs" />
-        <Compile Include="Controls\MenuItem.xaml.cs">
-          <DependentUpon>MenuItem.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Controls\UserPopup.xaml.cs">
-          <DependentUpon>UserPopup.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Models\Configuration.model.cs" />
-        <Compile Include="Models\Equidea.model.cs" />
-        <Compile Include="Models\Finances.model.cs" />
-        <Compile Include="Models\Rider.model.cs" />
-        <Compile Include="Models\Staff.model.cs" />
-        <Compile Include="Models\Storage.model.cs" />
-        <Compile Include="Pages\Equidea\Add.xaml.cs">
-          <DependentUpon>Add.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Pages\Equidea\Index.xaml.cs">
-          <DependentUpon>Index.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Pages\Home.xaml.cs">
-          <DependentUpon>Home.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Pages\Rider\Add.xaml.cs">
-          <DependentUpon>Add.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Pages\Rider\Index.xaml.cs">
-          <DependentUpon>Index.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Pages\Settings.xaml.cs">
-          <DependentUpon>Settings.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Pages\Staff\Add.xaml.cs">
-          <DependentUpon>Add.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Pages\Staff\Index.xaml.cs">
-          <DependentUpon>Index.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Windows\Logiciel.xaml.cs">
-          <DependentUpon>Logiciel.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Windows\Login.xaml.cs">
-          <DependentUpon>Login.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Windows\Popups.xaml.cs">
-          <DependentUpon>Popups.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="Windows\Register.xaml.cs">
-          <DependentUpon>Register.xaml</DependentUpon>
-        </Compile>
-        <Compile Include="App.xaml.cs">
-            <DependentUpon>App.xaml</DependentUpon>
-            <SubType>Code</SubType>
-        </Compile>
-        <Compile Include="Classes\Equidae.cs" />
-        <Compile Include="Classes\Rider.cs" />
-        <Page Include="Assets\Icons.xaml" />
-        <Page Include="Assets\Styles\DarkTheme.xaml" />
-        <Page Include="Assets\Styles\ListViewStyle.xaml" />
-        <Page Include="Assets\Styles\MainStyle.xaml" />
-        <Page Include="Controls\MenuItem.xaml" />
-        <Page Include="Controls\UserPopup.xaml" />
-        <Page Include="Pages\Equidea\Add.xaml" />
-        <Page Include="Pages\Equidea\Index.xaml" />
-        <Page Include="Pages\Home.xaml" />
-        <Page Include="Pages\Rider\Add.xaml" />
-        <Page Include="Pages\Rider\Index.xaml" />
-        <Page Include="Pages\Settings.xaml" />
-        <Page Include="Pages\Staff\Add.xaml" />
-        <Page Include="Pages\Staff\Index.xaml" />
-        <Page Include="Windows\Logiciel.xaml" />
-        <Page Include="Windows\Login.xaml" />
-        <Page Include="Windows\Popups.xaml" />
-        <Page Include="Windows\Register.xaml" />
-    </ItemGroup>
-    <ItemGroup>
-        <Compile Include="Properties\AssemblyInfo.cs">
-            <SubType>Code</SubType>
-        </Compile>
-        <Compile Include="Properties\Resources.Designer.cs">
-            <AutoGen>True</AutoGen>
-            <DesignTime>True</DesignTime>
-            <DependentUpon>Resources.resx</DependentUpon>
-        </Compile>
-        <EmbeddedResource Include="Properties\Resources.resx">
-            <Generator>ResXFileCodeGenerator</Generator>
-            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-        </EmbeddedResource>
-    </ItemGroup>
-    <ItemGroup>
-        <None Include="App.config" />
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="Assets\icone.ico" />
-      <Resource Include="Assets\icone.png">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Resource>
-      <Content Include="Assets\icone_transparent.ico" />
-      <Content Include="Resources\config.json" />
-      <Content Include="Resources\database\rider.json" />
-      <Content Include="Resources\database\staff.json" />
-    </ItemGroup>
-    <ItemGroup>
-      <PackageReference Include="MaterialDesignThemes" Version="4.4.0-ci94" />
-      <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0-preview.1.22076.8" />
-      <PackageReference Include="System.Buffers" Version="4.5.1" />
-      <PackageReference Include="System.Memory" Version="4.5.4" />
-      <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
-      <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="7.0.0-preview.1.22076.8" />
-      <PackageReference Include="System.Text.Encodings.Web" Version="7.0.0-preview.1.22076.8" />
-      <PackageReference Include="System.Text.Json" Version="7.0.0-preview.1.22076.8" />
-      <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
-      <PackageReference Include="System.ValueTuple" Version="4.5.0" />
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89D6D541-A617-4B1E-B950-5D2A9AAF64B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EquiLog</RootNamespace>
+    <AssemblyName>EquiLog</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <ApplicationIcon>assets/icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>assets/icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>assets/icone.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="PresentationFramework.Aero2" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controllers\Configuration.controller.cs" />
+    <Compile Include="Controllers\Equidea.controller.cs" />
+    <Compile Include="Controllers\Rider.controller.cs" />
+    <Compile Include="Controllers\Staff.controller.cs" />
+    <Compile Include="Controls\MenuItem.xaml.cs">
+      <DependentUpon>MenuItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserPopup.xaml.cs">
+      <DependentUpon>UserPopup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Configuration.model.cs" />
+    <Compile Include="Models\Equidea.model.cs" />
+    <Compile Include="Models\Finances.model.cs" />
+    <Compile Include="Models\Rider.model.cs" />
+    <Compile Include="Models\Staff.model.cs" />
+    <Compile Include="Models\Storage.model.cs" />
+    <Compile Include="Pages\Equidea\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Equidea\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rider\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Rider\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Staff\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Staff\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Logiciel.xaml.cs">
+      <DependentUpon>Logiciel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Popups.xaml.cs">
+      <DependentUpon>Popups.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Register.xaml.cs">
+      <DependentUpon>Register.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\Equidea.cs" />
+    <Compile Include="Classes\Rider.cs" />
+    <Page Include="Assets\Icons.xaml" />
+    <Page Include="Assets\Styles\DarkTheme.xaml" />
+    <Page Include="Assets\Styles\ListViewStyle.xaml" />
+    <Page Include="Assets\Styles\MainStyle.xaml" />
+    <Page Include="Controls\MenuItem.xaml" />
+    <Page Include="Controls\UserPopup.xaml" />
+    <Page Include="Pages\Equidea\Add.xaml" />
+    <Page Include="Pages\Equidea\Index.xaml" />
+    <Page Include="Pages\Home.xaml" />
+    <Page Include="Pages\Rider\Add.xaml" />
+    <Page Include="Pages\Rider\Index.xaml" />
+    <Page Include="Pages\Settings.xaml" />
+    <Page Include="Pages\Staff\Add.xaml" />
+    <Page Include="Pages\Staff\Index.xaml" />
+    <Page Include="Windows\Logiciel.xaml" />
+    <Page Include="Windows\Login.xaml" />
+    <Page Include="Windows\Popups.xaml" />
+    <Page Include="Windows\Register.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\icone.ico" />
+    <Resource Include="Assets\icone.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Assets\icone_transparent.ico" />
+    <Content Include="Resources\config.json" />
+    <Content Include="Resources\database\rider.json" />
+    <Content Include="Resources\database\staff.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.4.0-ci94" />
+    <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0-preview.1.22076.8" />
+    <PackageReference Include="System.Buffers" Version="4.5.1" />
+    <PackageReference Include="System.Memory" Version="4.5.4" />
+    <PackageReference Include="System.Numerics.Vectors" Version="4.5.0" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="7.0.0-preview.1.22076.8" />
+    <PackageReference Include="System.Text.Encodings.Web" Version="7.0.0-preview.1.22076.8" />
+    <PackageReference Include="System.Text.Json" Version="7.0.0-preview.1.22076.8" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
+    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

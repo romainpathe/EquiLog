@@ -1,6 +1,6 @@
 ﻿namespace EquiLog.Classes
 {
-    public class Equidae
+    public class Equidea
     {
         
     }
