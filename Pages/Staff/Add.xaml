@@ -41,7 +41,8 @@
             <TextBox Grid.Row="4" Grid.Column="1" x:Name="holidays" TextWrapping="Wrap" Text="6" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
             <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Mot de Passe : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  VerticalAlignment="Center"/>
             <TextBox Grid.Row="5" Grid.Column="1" x:Name="password" TextWrapping="Wrap" Text="*********" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
-            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,57,317,133" Grid.ColumnSpan="2" Click="ButtonBase_OnClick"/>
+            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,57,317,41" Grid.ColumnSpan="2"  Grid.Column="0" Height="20" Click="ButtonBase_OnClick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
             <StackPanel Grid.Row="6" Grid.Column="0" Margin="10">
                 <TextBlock Foreground="{DynamicResource TextSecundaryColor}">*Nombre d'heures par semaine</TextBlock>
                 <TextBlock Foreground="{DynamicResource TextSecundaryColor}">**Nombre de jour de vacances par ans</TextBlock>

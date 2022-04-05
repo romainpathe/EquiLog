@@ -45,7 +45,8 @@
             <TextBox Grid.Row="4" Grid.Column="1" x:Name="phone" TextWrapping="Wrap" Text="" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
             <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Nombre de cours par mois" Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Grid.Row="5" Grid.Column="1" x:Name="course" TextWrapping="Wrap" Text="" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
-            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,10,317,122" Grid.ColumnSpan="2" Grid.Column="0" Click="ButtonBase_OnClick" Height="20"/>
+            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,10,317,122" Grid.ColumnSpan="2" Grid.Column="0" Click="ButtonBase_OnClick" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            
         </Grid>
     </Border>
 
