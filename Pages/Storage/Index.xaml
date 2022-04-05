@@ -1,0 +1,48 @@
+﻿<Page x:Class="EquiLog.Pages.Rider.Index"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:EquiLog.Pages.Rider"
+      mc:Ignorable="d"
+      Title="Index">
+<Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="0" Grid.Column="0" Name="dgUsers" Margin="5">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
+                        <GridViewColumn Header="Prénom" DisplayMemberBinding="{Binding Firstname}" />
+                        <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Lastname}" />
+                        <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" />
+                        <GridViewColumn Header="Téléphone" DisplayMemberBinding="{Binding Phone}" />
+                        <GridViewColumn Header="Cours*" DisplayMemberBinding="{Binding Course}" />
+                        <GridViewColumn Header="Level**" DisplayMemberBinding="{Binding Level}" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
+                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">*Nombre d'heures par mois</TextBlock>
+                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">**Les levels sont compté en Galops</TextBlock>
+            </StackPanel>
+            <Button Grid.Row="0" Grid.Column="1" Name="Btn_Add" Width="150" Height="40" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un Rider" FontSize="17" Click="Btn_Add_OnClick" ClickMode="Press" Background="Transparent" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+
+        
+    </Border>
+</Page>
