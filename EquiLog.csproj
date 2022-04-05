@@ -96,6 +96,12 @@
     <Compile Include="Pages\Staff\Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Storage\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Storage\Index.xaml.cs">
+      <DependentUpon>Index.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Logiciel.xaml.cs">
       <DependentUpon>Logiciel.xaml</DependentUpon>
     </Compile>
@@ -128,6 +134,8 @@
     <Page Include="Pages\Settings.xaml" />
     <Page Include="Pages\Staff\Add.xaml" />
     <Page Include="Pages\Staff\Index.xaml" />
+    <Page Include="Pages\Storage\Add.xaml" />
+    <Page Include="Pages\Storage\Index.xaml" />
     <Page Include="Windows\Logiciel.xaml" />
     <Page Include="Windows\Login.xaml" />
     <Page Include="Windows\Popups.xaml" />
@@ -157,6 +165,7 @@
     </Resource>
     <Content Include="Assets\icone_transparent.ico" />
     <Content Include="Resources\config.json" />
+    <Content Include="Resources\database\equidea.json" />
     <Content Include="Resources\database\rider.json" />
     <Content Include="Resources\database\staff.json" />
   </ItemGroup>

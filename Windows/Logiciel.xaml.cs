@@ -12,6 +12,7 @@ namespace EquiLog.Windows
         {
             InitializeComponent();
             Rider_controller.InitRiderList();
+            Equidae_controller.InitEquideaList();
             fContainer.Navigate(new System.Uri("../Pages/Staff/Index.xaml", UriKind.RelativeOrAbsolute));
         }
 

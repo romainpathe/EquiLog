@@ -14,13 +14,13 @@ namespace EquiLog.Controllers
     {
         public static List<Equidea_model> equideaList;
 
-        public static void InitRiderList()
+        public static void InitEquideaList()
         {
             var srConfig = new StreamReader("../../Resources/database/equidea.json");
             equideaList = JsonSerializer.Deserialize<List<Equidea_model>>(srConfig.ReadToEnd());
             srConfig.Close();
         }
-        private static void UpdateRiderList()
+        private static void UpdateEquideaList()
         {
             var jsonConfigString = JsonSerializer.Serialize(equideaList);
             var swConfig = new StreamWriter("../../Resources/database/equidea.json");
@@ -30,7 +30,7 @@ namespace EquiLog.Controllers
         public static void AddEquidae(string lastname, string firstname, string gender, int age, string color, int hours)
         {
             equideaList.Add(new Equidea_model(lastname,firstname, gender, age, color, hours));
-            UpdateRiderList();
+            UpdateEquideaList();
         }
     }
 }

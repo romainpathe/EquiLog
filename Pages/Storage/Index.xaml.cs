@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using EquiLog.Controllers;
 using EquiLog.Windows;
 
-namespace EquiLog.Pages.Rider
+namespace EquiLog.Pages.Storage
 {
     public partial class Index : Page
     {

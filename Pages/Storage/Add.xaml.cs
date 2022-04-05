@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using EquiLog.Controllers;
 
-namespace EquiLog.Pages.Rider
+namespace EquiLog.Pages.Storage
 {
     public partial class Add : Page
     {
