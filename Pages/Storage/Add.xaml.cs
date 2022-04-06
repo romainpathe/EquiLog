@@ -1,6 +1,8 @@
-﻿using System.Windows;
+﻿using System;
+using System.Diagnostics;
+using System.Windows;
 using System.Windows.Controls;
-using EquiLog.Controllers;
+using MaterialDesignThemes.Wpf;
 
 namespace EquiLog.Pages.Storage
 {
@@ -12,7 +14,7 @@ namespace EquiLog.Pages.Storage
         }
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
-            if (firstname.Text == "")
+            /*if (firstname.Text == "")
             {
                 MessageBox.Show("Le prénom ne peux pas être null");
                 return;
@@ -50,7 +52,7 @@ namespace EquiLog.Pages.Storage
             }
 
             Rider_controller.AddRider(firstname.Text, lastname.Text, email.Text,phone.Text,intCourse,level.Text);
-            Window.GetWindow(this)?.Close();
+            Window.GetWindow(this)?.Close();*/
         }
     }
 }

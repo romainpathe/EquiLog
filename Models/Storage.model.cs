@@ -11,10 +11,12 @@
 
         public int SaddlePad { get; set; }
 
-        public int Straps { get; set; }
+        public int StirrupStraps { get; set; }
 
         public int Stirrup { get; set; }
-        public Storage_model(int hay,int saddle, int briddle, int granule, int blanket, int saddlepad, int straps, int stirrup)
+
+        public string OrderDemand { get;set; }
+        public Storage_model(int hay,int saddle, int briddle, int granule, int blanket, int saddlepad, int stirrupstraps, int stirrup,string orderdemand)
         {
             Hay = hay;
             Saddle = saddle;    
@@ -22,8 +24,9 @@
             Granule = granule;
             Blanket = blanket;
             SaddlePad = saddlepad;
-            Straps = straps;
+            StirrupStraps = stirrupstraps;
             Stirrup = stirrup;
+            OrderDemand = orderdemand;  
 
         }
 
