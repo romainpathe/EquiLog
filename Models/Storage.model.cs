@@ -1,10 +1,12 @@
-﻿namespace EquiLog.Models
+﻿using System;
+
+namespace EquiLog.Models
 {
     public class Storage_model
     {
         public int Hay { get; set; }
         public int Saddle { get; set; }
-        public int Briddle { get; set; }
+        public int Bridle { get; set; }
 
         public int Granule { get; set; }
         public int Blanket { get; set; }
@@ -29,6 +31,31 @@
             OrderDemand = orderdemand;  
 
         }
+
+        
+        public string StringDate { get; set; }
+
+        public DateTime Date{ get; set; }
+        
+        //Convert string Date to dateTime
+        public void ConvertStringToDate()
+        {
+            Date = DateTime.Parse(StringDate);
+        }
+        
+        public Storage_model()
+        {
+            Hay = 0;
+            Saddle = 0;
+            Bridle = 0;
+            Granule = 0;
+            Blanket = 0;
+            SaddlePad = 0;
+            Stirrup = 0;
+            StringDate = DateTime.Now.ToString("yyyy-MM-dd");
+            ConvertStringToDate();
+        }
+        
 
     }
 }
