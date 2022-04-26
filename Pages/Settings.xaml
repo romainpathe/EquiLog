@@ -15,7 +15,7 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Margin="10" HorizontalAlignment="Center">
                 <Label FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}">Application option</Label>
-                <CheckBox x:Name="RegistrationCheckBox" Checked="RegistrationCheckBox_Checked" Unchecked="RegistrationCheckBox_Checked">
+                <CheckBox IsEnabled="False" x:Name="RegistrationCheckBox" Checked="RegistrationCheckBox_Checked" Unchecked="RegistrationCheckBox_Checked">
                     <TextBlock Foreground="{DynamicResource PrimaryTextColor}">
                         Register 
                     </TextBlock>

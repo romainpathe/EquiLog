@@ -23,9 +23,10 @@
                         <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
                         <GridViewColumn Header="Prénom" DisplayMemberBinding="{Binding Firstname}" />
                         <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Lastname}" />
-                        <GridViewColumn Header="Métier" DisplayMemberBinding="{Binding Job}" />
-                        <GridViewColumn Header="Heures*" DisplayMemberBinding="{Binding Hours}" />
-                        <GridViewColumn Header="Vacances**" DisplayMemberBinding="{Binding Holidays}" />
+                        <GridViewColumn Header="Age" DisplayMemberBinding="{Binding Age}" />
+                        <GridViewColumn Header="Robe" DisplayMemberBinding="{Binding Color}" />
+                        <GridViewColumn Header="Heure*" DisplayMemberBinding="{Binding Hours}" />
+                        <GridViewColumn Header="Genre" DisplayMemberBinding="{Binding Gender}" />
                     </GridView>
                 </ListView.View>
             </ListView>

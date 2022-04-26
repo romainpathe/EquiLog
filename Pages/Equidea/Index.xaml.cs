@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using EquiLog.Controllers;
 using EquiLog.Windows;
 
 namespace EquiLog.Pages.Equidea
@@ -9,6 +10,7 @@ namespace EquiLog.Pages.Equidea
         public Index()
         {
             InitializeComponent();
+            dgUsers.ItemsSource = Equidae_controller.equideaList;
         }
         
         private void Btn_Add_OnClick(object sender, RoutedEventArgs e)
