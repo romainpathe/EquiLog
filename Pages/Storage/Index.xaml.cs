@@ -10,12 +10,12 @@ namespace EquiLog.Pages.Storage
         public Index()
         {
             InitializeComponent();
-            dgUsers.ItemsSource = Rider_controller.riderList;
+            dgUsers.ItemsSource = Storage_controller.storageList;
         }
 
         private void Btn_Add_OnClick(object sender, RoutedEventArgs e)
         {
-            new Popups("../Pages/Rider/Add.xaml").Show();
+            new Popups("../Pages/Storage/Add.xaml").Show();
         }
     }
 }

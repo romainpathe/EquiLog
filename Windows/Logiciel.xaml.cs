@@ -13,6 +13,7 @@ namespace EquiLog.Windows
             InitializeComponent();
             Rider_controller.InitRiderList();
             Equidae_controller.InitEquideaList();
+            Storage_controller.InitStorageList();
             fContainer.Navigate(new System.Uri("../Pages/Staff/Index.xaml", UriKind.RelativeOrAbsolute));
         }
 
@@ -124,18 +125,18 @@ namespace EquiLog.Windows
             Popup.IsOpen = false;
         }
 
-        private void btnPointOfSale_MouseEnter(object sender, MouseEventArgs e)
+        private void btnStorage_MouseEnter(object sender, MouseEventArgs e)
         {
             if (Tg_Btn.IsChecked == false)
             {
-                Popup.PlacementTarget = btnPointOfSale;
+                Popup.PlacementTarget = btnStorage;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Poin Of Sale";
+                Header.PopupText.Text = "Storage";
             }
         }
 
-        private void btnPointOfSale_MouseLeave(object sender, MouseEventArgs e)
+        private void btnStorage_MouseLeave(object sender, MouseEventArgs e)
         {
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;
@@ -206,7 +207,11 @@ namespace EquiLog.Windows
         {
             fContainer.Navigate(new System.Uri("../Pages/Equidea/Index.xaml", UriKind.RelativeOrAbsolute));
         }
-        
-        
+
+
+        private void BtnStorage_OnClick(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("../Pages/Storage/Index.xaml", UriKind.RelativeOrAbsolute));
+        }
     }
 }

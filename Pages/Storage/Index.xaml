@@ -21,20 +21,21 @@
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
-                        <GridViewColumn Header="Prénom" DisplayMemberBinding="{Binding Firstname}" />
-                        <GridViewColumn Header="Nom" DisplayMemberBinding="{Binding Lastname}" />
-                        <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}" />
-                        <GridViewColumn Header="Téléphone" DisplayMemberBinding="{Binding Phone}" />
-                        <GridViewColumn Header="Cours*" DisplayMemberBinding="{Binding Course}" />
-                        <GridViewColumn Header="Level**" DisplayMemberBinding="{Binding Level}" />
+                        <GridViewColumn Header="Foin" DisplayMemberBinding="{Binding Hay}" />
+                        <GridViewColumn Header="Granulés" DisplayMemberBinding="{Binding Granule}" />
+                        <GridViewColumn Header="Filets" DisplayMemberBinding="{Binding Briddle}" />
+                        <GridViewColumn Header="Selles" DisplayMemberBinding="{Binding Saddle}" />
+                        <GridViewColumn Header="Couverture" DisplayMemberBinding="{Binding Blanket}" />
+                        <GridViewColumn Header="Etrier" DisplayMemberBinding="{Binding Stirrup}" />
+                        <GridViewColumn Header="Etriviére" DisplayMemberBinding="{Binding StirrupStraps}" />
+                        <GridViewColumn Header="Tapis" DisplayMemberBinding="{Binding SaddlePad}" />
                     </GridView>
                 </ListView.View>
             </ListView>
             <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
-                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">*Nombre d'heures par mois</TextBlock>
-                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">**Les levels sont compté en Galops</TextBlock>
+                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">Toutes les quantités sont en kilo !</TextBlock>
             </StackPanel>
-            <Button Grid.Row="0" Grid.Column="1" Name="Btn_Add" Width="150" Height="40" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un Rider" FontSize="17" Click="Btn_Add_OnClick" ClickMode="Press" Background="Transparent" >
+            <Button Grid.Row="0" Grid.Column="1" Name="Btn_Add" Width="200" Height="80" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un&#x0a; inventaire" FontSize="17" Click="Btn_Add_OnClick" ClickMode="Press" Background="Transparent" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>

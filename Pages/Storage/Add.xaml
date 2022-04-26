@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Title="Add">
     <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
-        <Grid Height="353">
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
@@ -19,16 +19,28 @@
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
-               
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="Foin : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,11" />
+            <TextBlock Grid.Column="0" Grid.Row="0" TextWrapping="Wrap" Text="Foin : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,11" />
             <TextBox Grid.Row="0" Grid.Column="1" x:Name="Hay" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
             <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Granulés : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  Height="18" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="granule" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18" Margin="0,0,0,11"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="Granule" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18" Margin="0,0,0,11"/>
             <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Filets " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
-
-            <ComboBox Grid.Row="5" Grid.Column="1" x:Name="level" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18">
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="Briddle" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Selles " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="Saddle" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18" Margin="0,0,0,11"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Couverture : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="4" Grid.Column="1" x:Name="Blanket" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Etrier : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="5" Grid.Column="1" x:Name="Stirrup" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            <TextBlock Grid.Row="6" Grid.Column="0" TextWrapping="Wrap" Text="Etriviére : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="6" Grid.Column="1" x:Name="StirrupStraps" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" TextWrapping="Wrap" Text="Tapis : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="7" Grid.Column="1" x:Name="SaddlePad" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            <!--<TextBlock Grid.Row="8" Grid.Column="0" TextWrapping="Wrap" Text="Demande de commande : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <ComboBox Grid.Row="8" Grid.Column="1" x:Name="level" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18">
                 <ComboBoxItem>Foin</ComboBoxItem>
                 <ComboBoxItem>Granulés</ComboBoxItem>
                 <ComboBoxItem>Selle</ComboBoxItem>
@@ -38,14 +50,8 @@
                 <ComboBoxItem>Etriers</ComboBoxItem>
                 <ComboBoxItem>Etrivières</ComboBoxItem>
                 
-            </ComboBox>
-            <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Selles " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
-            <TextBox Grid.Row="3" Grid.Column="1" x:Name="saddle" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18" Margin="0,0,0,11"/>
-            <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Tapis : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="4" Grid.Column="1" x:Name="phone" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
-            <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Demande de commande : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Button Grid.Row="6" Content="Valider" Width="166" Margin="317,57,317,41" Grid.ColumnSpan="2"  Grid.Column="0" Height="20" Click="ButtonBase_OnClick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="2" Grid.Column="1" x:Name="briddle" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
+            </ComboBox>-->
+            <Button Grid.Row="9" Content="Valider" Width="166" Margin="317,57,317,41" Grid.ColumnSpan="2"  Grid.Column="0" Height="20" Click="ButtonBase_OnClick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </Border>
 

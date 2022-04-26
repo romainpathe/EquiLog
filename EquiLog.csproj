@@ -60,6 +60,7 @@
     <Compile Include="Controllers\Equidea.controller.cs" />
     <Compile Include="Controllers\Rider.controller.cs" />
     <Compile Include="Controllers\Staff.controller.cs" />
+    <Compile Include="Controllers\Storage.controller.cs" />
     <Compile Include="Controls\MenuItem.xaml.cs">
       <DependentUpon>MenuItem.xaml</DependentUpon>
     </Compile>
@@ -118,8 +119,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Classes\Equidea.cs" />
-    <Compile Include="Classes\Rider.cs" />
     <Page Include="Assets\Icons.xaml" />
     <Page Include="Assets\Styles\DarkTheme.xaml" />
     <Page Include="Assets\Styles\ListViewStyle.xaml" />
@@ -160,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\icone.ico" />
+    <Content Include="Resources\database\storage.json" />
     <Resource Include="Assets\icone.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
