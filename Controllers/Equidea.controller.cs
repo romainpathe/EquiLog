@@ -29,8 +29,20 @@ namespace EquiLog.Controllers
         }
         public static void AddEquidae(string lastname, string firstname, string gender, int age, string color, int hours)
         {
-            equideaList.Add(new Equidea_model(lastname,firstname, gender, age, color, hours));
+            int id = 1;
+            if (equideaList.Count > 0)
+            {
+                id = equideaList.Last().Id + 1;
+            }
+            equideaList.Add(new Equidea_model(id,lastname,firstname, gender, age, color, hours));
             UpdateEquideaList();
         }
+
+        public static void RemoveEquidea(int id)
+        {
+            equideaList.Remove(equideaList.Find(x => x.Id == id));
+            UpdateEquideaList();
+        }
+        
     }
 }

@@ -10,8 +10,9 @@
         public string Color { get; set; }   
         public int Hours { get; set; }
 
-        public Equidea_model(string lastname,string firstname,string gender,int age,string color,int hours)
+        public Equidea_model(int id, string lastname,string firstname,string gender,int age,string color,int hours)
         {
+            Id = id;
             Lastname = lastname;
             Firstname = firstname;
             Gender = gender;

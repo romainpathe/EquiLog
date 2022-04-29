@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using EquiLog.Models;
 
@@ -27,10 +28,20 @@ namespace EquiLog
 
         public static void AddStaff(string firstname, string lastname, string password, string job, int hours, int holidays)
         {
-            staffList.Add(new Staff_model(staffList.Count, firstname,lastname,password,job,hours,holidays));
+            int id = 1;
+            if (staffList.Count > 0)
+            {
+                id = staffList.Last().Id + 1;
+            }
+            staffList.Add(new Staff_model(id, firstname,lastname,password,job,hours,holidays));
             UpdateStaffList();
         }
         
+        public static void RemoveStaff(int id)
+        {
+            staffList.Remove(staffList.Find(x => x.Id == id));
+            UpdateStaffList();
+        }
         
     }
 }

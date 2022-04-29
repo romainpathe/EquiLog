@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using EquiLog.Models;
 
@@ -24,9 +25,21 @@ namespace EquiLog.Controllers
         }
         public static void AddRider(string firstname, string lastname,string email,string phone, int course, string level)
         {
-            riderList.Add(new Rider_model(riderList.Count,firstname,lastname,email,phone,course,level));
+            int id = 1;
+            if (riderList.Count > 0)
+            {
+                id = riderList.Last().Id + 1;
+            }
+            riderList.Add(new Rider_model(id,firstname,lastname,email,phone,course,level));
             UpdateRiderList();
         }
-
+        
+        public static void RemoveRider(int id)
+        {
+            riderList.Remove(riderList.Find(x => x.Id == id));
+            UpdateRiderList();
+        }
+        
+        
     }
 }

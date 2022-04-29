@@ -18,5 +18,17 @@ namespace EquiLog.Pages.Staff
         {
             new Popups("../Pages/Staff/Add.xaml").Show();
         }
+
+        private void Btn_Remove_OnClick(object sender, RoutedEventArgs e)
+        {
+            var result = Int32.TryParse(RemoveID.Text, out var id);
+            if (!result || Staff_controller.staffList.Find(x => x.Id == id) == null)
+            {
+                RemoveError.Visibility = Visibility.Visible;   
+                return;
+            }
+            Staff_controller.RemoveStaff(id);
+            RemoveError.Visibility = Visibility.Hidden;
+            RemoveID.Text = "";        }
     }
 }

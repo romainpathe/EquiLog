@@ -34,15 +34,29 @@
                 <TextBlock Foreground="{DynamicResource TextSecundaryColor}">*Nombre d'heures par semaine</TextBlock>
                 <TextBlock Foreground="{DynamicResource TextSecundaryColor}">**Nombre de jour de vacances par ans</TextBlock>
             </StackPanel>
-            <Button Grid.Column="1" Name="Btn_Add" Width="150" Height="40" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un Equider" FontSize="17" Click="Btn_Add_OnClick" ClickMode="Press" Background="Transparent" >
+            <Button Grid.Row="0" Grid.Column="1" Name="Btn_Add" Width="150" Height="40" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un Equidé" FontSize="17" Click="Btn_Add_OnClick" ClickMode="Press" Background="Transparent" >
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"/>
                     </Style>
                 </Button.Resources>
             </Button>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Name="RemoveError" Foreground="Red" TextAlignment="Center" Visibility="Hidden"><Bold>L'id que vous avez saisie n'existe pas</Bold></TextBlock>
+                <TextBox Grid.Row="1" Name="RemoveID" Width="180"></TextBox>
+                <Button Grid.Row="2" Name="Btn_Remove" Width="180" Height="40" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Supprimer un Equidé" FontSize="17" Click="Btn_Remove_OnClick" ClickMode="Press" Background="Transparent" >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
         </Grid>
-
-        
     </Border>
 </Page>

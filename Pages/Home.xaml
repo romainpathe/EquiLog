@@ -7,7 +7,11 @@
       mc:Ignorable="d"
       Title="Home">
     <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
-        <TextBlock Text="Dashboard" FontSize="30" Foreground="{DynamicResource PrimaryTextColor}" FontWeight="Bold"
-                   VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Grid>
+            <Grid>
+                <TextBlock Text="Le logiciel qui va vous être présenté est une version alpha. &#x0a; Il peut donc y avoir des bugs ou des erreurs" FontSize="15" Foreground="IndianRed" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            </Grid>
+            <TextBlock Text="Dashboard" FontSize="30" Foreground="{DynamicResource PrimaryTextColor}" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        </Grid>
     </Border>
 </Page>
