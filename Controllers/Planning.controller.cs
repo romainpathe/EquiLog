@@ -26,7 +26,7 @@ namespace EquiLog.Controllers
         
         public static void AddPlanning(int EquideaId, int HoursId, int RiderId)
         {
-            //planning.Add(new Planning_model(EquideaId, HoursId,RiderId));
+            planning.Add(new Planning_model(EquideaId, HoursId,RiderId));
             UpdatePlanning();
         }
         
