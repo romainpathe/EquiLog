@@ -1,0 +1,33 @@
+﻿<Page x:Class="EquiLog.Pages.AddCourse"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:EquiLog.Pages"
+      mc:Ignorable="d"
+      Title="AddCourse">
+<Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="0" TextWrapping="Wrap" Text="Heure :" Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,11" />
+            <ComboBox Grid.Row="0" Grid.Column="1" Name="HoursList" DropDownOpened="HoursList_OnDropDownOpened">
+                
+            </ComboBox>
+            <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Cavalier :" Foreground="White" FontSize="14" HorizontalAlignment="Center"  Height="18" VerticalAlignment="Center"/>
+            <ComboBox Grid.Row="1" Grid.Column="1" Name="RiderList" DropDownOpened="RiderList_OnDropDownOpened"></ComboBox>
+            <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Equidé :" Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <ComboBox Grid.Row="2" Grid.Column="1" Name="EquideaList" DropDownOpened="EquideaList_OnDropDownOpened"></ComboBox>
+           
+            <Button Grid.Row="9" Content="Valider" Width="166" Margin="317,57,317,41" Click="ButtonBase_OnClick" Grid.ColumnSpan="2"  Grid.Column="0" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+    </Border>
+</Page>

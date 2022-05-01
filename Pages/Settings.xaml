@@ -29,6 +29,13 @@
                         </Style>
                     </Button.Resources>
                 </Button>
+                <Button Width="200" Height="40" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un cours" FontSize="17" Click="AddCourse_OnClick" ClickMode="Press" Background="Transparent" >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </StackPanel>
         </Grid>
     </Border>

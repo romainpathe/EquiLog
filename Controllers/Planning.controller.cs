@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using EquiLog.Models;
 
@@ -23,50 +24,17 @@ namespace EquiLog.Controllers
             swConfig.Close();
         }
         
+        public static void AddPlanning(int EquideaId, int HoursId, int RiderId)
+        {
+            //planning.Add(new Planning_model(EquideaId, HoursId,RiderId));
+            UpdatePlanning();
+        }
+        
         public static void InitHours()
         {
             var srConfig = new StreamReader("../../Resources/database/hours.json");
             Hours = JsonSerializer.Deserialize<List<Hours_model>>(srConfig.ReadToEnd());
             srConfig.Close();
-        }
-        
-        public List<Planning_model> GetByHour(int hour)
-        {
-            List<Planning_model> planning_by_hour = new List<Planning_model>();
-            foreach (Planning_model planning_model in planning)
-            {
-                if (planning_model.Hours_id == hour)
-                {
-                    planning_by_hour.Add(planning_model);
-                }
-            }
-            return planning_by_hour;
-        }
-
-        public List<Planning_model> GetByEquidea(int equidea_id)
-        {
-            List<Planning_model> planning_by_equidea = new List<Planning_model>();
-            foreach (Planning_model planning_model in planning)
-            {
-                if (planning_model.Equidea_id == equidea_id)
-                {
-                    planning_by_equidea.Add(planning_model);
-                }
-            }
-            return planning_by_equidea;
-        }
-        
-        public List<Planning_model> GetByRider(int rider_id)
-        {
-            List<Planning_model> planning_by_rider = new List<Planning_model>();
-            foreach (Planning_model planning_model in planning)
-            {
-                if (planning_model.Rider_id == rider_id)
-                {
-                    planning_by_rider.Add(planning_model);
-                }
-            }
-            return planning_by_rider;
         }
 
     }

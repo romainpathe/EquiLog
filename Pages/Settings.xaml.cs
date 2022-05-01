@@ -2,6 +2,7 @@
 using System.Windows.Controls;
 using EquiLog.Classes;
 using EquiLog.Controllers;
+using EquiLog.Windows;
 
 namespace EquiLog.Pages
 {
@@ -22,6 +23,10 @@ namespace EquiLog.Pages
         {
             Planning_controller.planning.RemoveAll(x=> x.Equidea_id != null);
         }
-        
+
+        private void AddCourse_OnClick(object sender, RoutedEventArgs e)
+        {
+            new Popups("../Pages/AddCourse.xaml").Show();
+        }
     }
 }

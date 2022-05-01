@@ -76,6 +76,9 @@
     <Compile Include="Models\Rider.model.cs" />
     <Compile Include="Models\Staff.model.cs" />
     <Compile Include="Models\Storage.model.cs" />
+    <Compile Include="Pages\AddCourse.xaml.cs">
+      <DependentUpon>AddCourse.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Equidea\Add.xaml.cs">
       <DependentUpon>Add.xaml</DependentUpon>
     </Compile>
@@ -131,6 +134,7 @@
     <Page Include="Assets\Styles\MainStyle.xaml" />
     <Page Include="Controls\MenuItem.xaml" />
     <Page Include="Controls\UserPopup.xaml" />
+    <Page Include="Pages\AddCourse.xaml" />
     <Page Include="Pages\Equidea\Add.xaml" />
     <Page Include="Pages\Equidea\Index.xaml" />
     <Page Include="Pages\Home.xaml" />
