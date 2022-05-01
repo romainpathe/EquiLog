@@ -1,4 +1,6 @@
-﻿namespace EquiLog.Models
+﻿using System.Runtime.Remoting.Messaging;
+
+namespace EquiLog.Models
 {
     public class Equidea_model
     {
@@ -21,5 +23,7 @@
             Hours = hours;
 
         }
+
+        
     }
 }

@@ -58,6 +58,7 @@
     </ApplicationDefinition>
     <Compile Include="Controllers\Configuration.controller.cs" />
     <Compile Include="Controllers\Equidea.controller.cs" />
+    <Compile Include="Controllers\Planning.controller.cs" />
     <Compile Include="Controllers\Rider.controller.cs" />
     <Compile Include="Controllers\Staff.controller.cs" />
     <Compile Include="Controllers\Storage.controller.cs" />
@@ -70,6 +71,8 @@
     <Compile Include="Models\Configuration.model.cs" />
     <Compile Include="Models\Equidea.model.cs" />
     <Compile Include="Models\Finances.model.cs" />
+    <Compile Include="Models\Hours.model.cs" />
+    <Compile Include="Models\Planning.model.cs" />
     <Compile Include="Models\Rider.model.cs" />
     <Compile Include="Models\Staff.model.cs" />
     <Compile Include="Models\Storage.model.cs" />
@@ -163,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\icone.ico" />
+    <Content Include="Resources\database\hours.json" />
     <Content Include="Resources\database\planning.json" />
     <Content Include="Resources\database\storage.json" />
     <Resource Include="Assets\icone.png">

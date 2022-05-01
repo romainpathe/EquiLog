@@ -15,11 +15,20 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Margin="10" HorizontalAlignment="Center">
                 <Label FontWeight="Bold" Foreground="{DynamicResource PrimaryTextColor}">Application option</Label>
-                <CheckBox IsEnabled="False" x:Name="RegistrationCheckBox" Checked="RegistrationCheckBox_Checked" Unchecked="RegistrationCheckBox_Checked">
+                <CheckBox IsEnabled="False" Name="RegistrationCheckBox" Checked="RegistrationCheckBox_Checked" Unchecked="RegistrationCheckBox_Checked">
                     <TextBlock Foreground="{DynamicResource PrimaryTextColor}">
                         Register 
                     </TextBlock>
                 </CheckBox>
+            </StackPanel>
+            <StackPanel Grid.Column="2" Margin="10" HorizontalAlignment="Center">
+                <Button Width="200" Height="40" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Clear le planning" FontSize="17" Click="RemovePlanningButton_Click" ClickMode="Press" Background="Transparent" >
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
             </StackPanel>
         </Grid>
     </Border>
