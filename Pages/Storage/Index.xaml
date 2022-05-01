@@ -25,15 +25,15 @@
                         <GridViewColumn Header="Granulés" DisplayMemberBinding="{Binding Granule}" />
                         <GridViewColumn Header="Filets" DisplayMemberBinding="{Binding Briddle}" />
                         <GridViewColumn Header="Selles" DisplayMemberBinding="{Binding Saddle}" />
-                        <GridViewColumn Header="Couverture" DisplayMemberBinding="{Binding Blanket}" />
-                        <GridViewColumn Header="Etrier" DisplayMemberBinding="{Binding Stirrup}" />
-                        <GridViewColumn Header="Etriviére" DisplayMemberBinding="{Binding StirrupStraps}" />
+                        <GridViewColumn Header="Couvertures" DisplayMemberBinding="{Binding Blanket}" />
+                        <GridViewColumn Header="Etriers" DisplayMemberBinding="{Binding Stirrup}" />
+                        <GridViewColumn Header="Etrivières" DisplayMemberBinding="{Binding StirrupStraps}" />
                         <GridViewColumn Header="Tapis" DisplayMemberBinding="{Binding SaddlePad}" />
                     </GridView>
                 </ListView.View>
             </ListView>
             <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
-                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">Toutes les quantités sont en kilo !</TextBlock>
+                <TextBlock Foreground="{DynamicResource TextSecundaryColor}">Le foin et les granulés sont en kilos !</TextBlock>
             </StackPanel>
             <Grid Grid.Row="0" Grid.Column="1">
                 

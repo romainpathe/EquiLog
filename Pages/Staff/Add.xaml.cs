@@ -18,39 +18,39 @@ namespace EquiLog.Pages.Staff
         {
             if (firstname.Text == "")
             {
-                MessageBox.Show("Le prénom ne peux pas être null");
+                MessageBox.Show("Le prénom ne peux pas être nul");
                 return;
             }
             if (lastname.Text == "")
             {
-                MessageBox.Show("Le nom ne peux pas être null");
+                MessageBox.Show("Le nom ne peux pas être nul");
                 return;
             }
             if (job.Text == "")
             {
-                MessageBox.Show("Le job ne peux pas être null");
+                MessageBox.Show("Le job ne peux pas être nul");
                 return;
             }
             if (hours.Text == "")
             {
-                MessageBox.Show("Le nombre d'heures ne peux pas être null");
+                MessageBox.Show("Le nombre d'heures ne peux pas être nul");
                 return;
             }
             if (holidays.Text == "")
             {
-                MessageBox.Show("Le nombre de vacance ne peux pas être null");
+                MessageBox.Show("Le nombre de vacances ne peux pas être nul");
                 return;
             }
             if (password.Text == "")
             {
-                MessageBox.Show("Le mots de passe ne peux pas être null");
+                MessageBox.Show("Le mot de passe ne peux pas être nul");
                 return;
             }
             var x = int.TryParse(hours.Text, out var intHours);
             var y = int.TryParse(holidays.Text, out var intHolidays);
             if (!x||!y)
             {
-                MessageBox.Show("Les vacances et les heures doivent être un nombres");
+                MessageBox.Show("Les vacances et les heures doivent être un nombre");
                 return;
             }
             Staff_controller.AddStaff(firstname.Text,lastname.Text,password.Text,job.Text,intHours,intHolidays);

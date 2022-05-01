@@ -14,38 +14,38 @@ namespace EquiLog.Pages.Rider
         {
             if (firstname.Text == "")
             {
-                MessageBox.Show("Le prénom ne peux pas être null");
+                MessageBox.Show("Le prénom ne peux pas être nul");
                 return;
             }
             if (lastname.Text == "")
             {
-                MessageBox.Show("Le nom ne peux pas être null");
+                MessageBox.Show("Le nom ne peux pas être nul");
                 return;
             }
             if (level.Text == "")
             {
-                MessageBox.Show("Le level ne peux pas être null");
+                MessageBox.Show("Le galop ne peux pas être nul");
                 return;
             }
             if (email.Text == "")
             {
-                MessageBox.Show("L'email ne peux pas être null");
+                MessageBox.Show("L'email ne peux pas être nul");
                 return;
             }
             if (phone.Text == "")
             {
-                MessageBox.Show("Le téléphone ne peux pas être null");
+                MessageBox.Show("Le téléphone ne peux pas être nul");
                 return;
             }
             if (course.Text == "")
             {
-                MessageBox.Show("Le nombre d'heure de cours ne peux pas être null");
+                MessageBox.Show("Le nombre d'heure de cours ne peuvent pas être nulles");
                 return;
             }
             var x = int.TryParse(course.Text, out var intCourse);
             if (!x)
             {
-                MessageBox.Show("Les heures de cours doit être un nombres");
+                MessageBox.Show("Les heures de cours doivent être un nombre");
                 return;
             }
 
