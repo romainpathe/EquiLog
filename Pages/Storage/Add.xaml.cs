@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using EquiLog.Controllers;
 using MaterialDesignThemes.Wpf;
+using EquiLog.Models;
 
 namespace EquiLog.Pages.Storage
 {
@@ -27,45 +28,98 @@ namespace EquiLog.Pages.Storage
         {
             
 
-            /*if (firstname.Text == "")
+            if (Hay.Text == "")
             {
-                MessageBox.Show("Le prénom ne peux pas être null");
+                MessageBox.Show("Le foin ne peux pas être nul");
                 return;
             }
-            if (lastname.Text == "")
+            if (Granule.Text == "")
             {
-                MessageBox.Show("Le nom ne peux pas être null");
+                MessageBox.Show("Les granulés ne peuvent pas être nul");
                 return;
             }
-            if (level.Text == "")
+            if (Briddle.Text == "")
             {
-                MessageBox.Show("Le level ne peux pas être null");
+                MessageBox.Show("Les filets ne peuvent pas être nul");
                 return;
             }
-            if (email.Text == "")
+            if (Saddle.Text == "")
             {
-                MessageBox.Show("L'email ne peux pas être null");
+                MessageBox.Show("Les selles ne peuvent pas être nul");
                 return;
             }
-            if (phone.Text == "")
+            if (Blanket.Text == "")
             {
-                MessageBox.Show("Le téléphone ne peux pas être null");
+                MessageBox.Show("Les couvertures ne peuvent pas être nul");
                 return;
             }
-            if (course.Text == "")
+            if (Stirrup.Text == "")
             {
-                MessageBox.Show("Le nombre d'heure de cours ne peux pas être null");
+                MessageBox.Show("Les étriers ne peuvent pas être nul");
                 return;
             }
-            var x = int.TryParse(course.Text, out var intCourse);
+            if (StirrupStraps.Text == "")
+            {
+                MessageBox.Show("Les étrivières ne peuvent pas être nulle");
+                return;
+            }
+            if (SaddlePad.Text == "")
+            {
+                MessageBox.Show("Les tapis ne peuvent pas être nul");
+                return;
+            }
+            var x = int.TryParse(Hay.Text, out var inthay);
             if (!x)
             {
-                MessageBox.Show("Les heures de cours doit être un nombres");
+                MessageBox.Show("Le foin doit être un nombre");
+                return;
+            }
+            var y = int.TryParse(Granule.Text, out var intgranule);
+            if (!y)
+            {
+                MessageBox.Show("Le foin doit être un nombre");
+                return;
+            }
+            var z = int.TryParse(Briddle.Text, out var intbriddle);
+            if (!z)
+            {
+                MessageBox.Show("Les filets doivent être un nombre");
+                return;
+            }
+            var a = int.TryParse(Saddle.Text, out var intsaddle);
+            if (!a)
+            {
+                MessageBox.Show("Les selles doivent être un nombre");
+                return;
+            }
+            var b = int.TryParse(Blanket.Text, out var intblanket);
+            if (!b)
+            {
+                MessageBox.Show("Les couvertures doivent être un nombre");
+                return;
+            }
+            var c = int.TryParse(Stirrup.Text, out var intstirrup);
+            if (!c)
+            {
+                MessageBox.Show("Les étriers doivent être un nombre");
+                return;
+            }
+            var d = int.TryParse(StirrupStraps.Text, out var intstirrupstraps);
+            if (!d)
+            {
+                MessageBox.Show("Les étrivières doivent être un nombre");
+                return;
+            }
+            var f = int.TryParse(SaddlePad.Text, out var intsaddlepad);
+            if (!f)
+            {
+                MessageBox.Show("Les tapis doivent être un nombre");
                 return;
             }
 
-            Rider_controller.AddRider(firstname.Text, lastname.Text, email.Text,phone.Text,intCourse,level.Text);
-            Window.GetWindow(this)?.Close();*/
+            Storage_model storage = new Storage_model(inthay,intgranule,intbriddle,intsaddle,intblanket,intstirrup,intstirrupstraps,intsaddlepad); 
+            Storage_controller.AddStorage(storage);
+            Window.GetWindow(this)?.Close();
         }
     }
 }

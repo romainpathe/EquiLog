@@ -12,8 +12,8 @@ namespace EquiLog.Models
         public int SaddlePad { get; set; }
         public int StirrupStraps { get; set; }
         public int Stirrup { get; set; }
-        public string OrderDemand { get;set; }
-        public Storage_model(int hay,int saddle, int briddle, int granule, int blanket, int saddlepad, int stirrupstraps, int stirrup,string orderdemand)
+       
+        public Storage_model(int hay,int saddle, int briddle, int granule, int blanket, int saddlepad, int stirrupstraps, int stirrup)
         {
             Hay = hay;
             Saddle = saddle;    
@@ -23,21 +23,12 @@ namespace EquiLog.Models
             SaddlePad = saddlepad;
             StirrupStraps = stirrupstraps;
             Stirrup = stirrup;
-            OrderDemand = orderdemand;  
-
+          
         }
 
         
-        public string StringDate { get; set; }
-
-        public DateTime Date{ get; set; }
-        
-        //Convert string Date to dateTime
-        public void ConvertStringToDate()
-        {
-            Date = DateTime.Parse(StringDate);
-        }
-        
+   
+       
         public Storage_model()
         {
             Hay = 0;
@@ -47,9 +38,8 @@ namespace EquiLog.Models
             Blanket = 0;
             SaddlePad = 0;
             Stirrup = 0;
-            OrderDemand = "";
-            StringDate = DateTime.Now.ToString("yyyy-MM-dd");
-            ConvertStringToDate();
+            StirrupStraps= 0;   
+            
         }
         
 
