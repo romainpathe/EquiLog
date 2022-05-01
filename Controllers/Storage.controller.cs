@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
 using EquiLog.Models;
+
 
 namespace EquiLog.Controllers
 {
@@ -19,6 +22,7 @@ namespace EquiLog.Controllers
         public static void AddStorage(Storage_model storage)
         {
             storageList.Add(storage);
+            //storageList.Last().Hay;
         }
         
         private static void SaveStorageList()

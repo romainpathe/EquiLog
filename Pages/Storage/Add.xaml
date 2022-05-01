@@ -24,7 +24,7 @@
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
             <TextBlock Grid.Column="0" Grid.Row="0" TextWrapping="Wrap" Text="Foin : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,11" />
-            <TextBox Grid.Row="0" Grid.Column="1" x:Name="Hay" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="Hay" TextWrapping="Wrap" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
             <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Granulés : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  Height="18" VerticalAlignment="Center"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="Granule" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18" Margin="0,0,0,11"/>
             <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Filets " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
@@ -39,18 +39,7 @@
             <TextBox Grid.Row="6" Grid.Column="1" x:Name="StirrupStraps" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
             <TextBlock Grid.Row="7" Grid.Column="0" TextWrapping="Wrap" Text="Tapis : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Grid.Row="7" Grid.Column="1" x:Name="SaddlePad" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
-            <!--<TextBlock Grid.Row="8" Grid.Column="0" TextWrapping="Wrap" Text="Demande de commande : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <ComboBox Grid.Row="8" Grid.Column="1" x:Name="level" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18">
-                <ComboBoxItem>Foin</ComboBoxItem>
-                <ComboBoxItem>Granulés</ComboBoxItem>
-                <ComboBoxItem>Selle</ComboBoxItem>
-                <ComboBoxItem>Filet</ComboBoxItem>
-                <ComboBoxItem>Couverture</ComboBoxItem>
-                <ComboBoxItem>Tapis</ComboBoxItem>
-                <ComboBoxItem>Etriers</ComboBoxItem>
-                <ComboBoxItem>Etrivières</ComboBoxItem>
-                
-            </ComboBox>-->
+           
             <Button Grid.Row="9" Content="Valider" Width="166" Margin="317,57,317,41" Grid.ColumnSpan="2"  Grid.Column="0" Height="20" Click="ButtonBase_OnClick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Grid>
     </Border>

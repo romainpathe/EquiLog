@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
+using EquiLog.Controllers;
 using MaterialDesignThemes.Wpf;
 
 namespace EquiLog.Pages.Storage
@@ -11,9 +12,15 @@ namespace EquiLog.Pages.Storage
         public Add()
         {
             InitializeComponent();
+
         }
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
+            
+
+            //Hay.Text= Storage_controller.storageList.Last().Hay; marche pas 
+
+
             /*if (firstname.Text == "")
             {
                 MessageBox.Show("Le prénom ne peux pas être null");
