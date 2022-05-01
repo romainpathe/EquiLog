@@ -14,6 +14,14 @@ namespace EquiLog.Pages.Storage
         {
             InitializeComponent();
             Hay.Text = Storage_controller.storageList.Last().Hay.ToString();
+            Granule.Text= Storage_controller.storageList.Last().Granule.ToString();
+            Briddle.Text= Storage_controller.storageList.Last().Briddle.ToString();
+            Saddle.Text= Storage_controller.storageList.Last().Saddle.ToString();
+            Blanket.Text= Storage_controller.storageList.Last().Blanket.ToString();
+            Stirrup.Text= Storage_controller.storageList.Last().Stirrup.ToString();
+            StirrupStraps.Text= Storage_controller.storageList.Last().StirrupStraps.ToString();
+            SaddlePad.Text= Storage_controller.storageList.Last().SaddlePad.ToString();
+
         }
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {

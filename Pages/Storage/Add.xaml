@@ -26,16 +26,16 @@
             <TextBlock Grid.Column="0" Grid.Row="0" TextWrapping="Wrap" Text="Foin : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,11" />
             <TextBox Grid.Row="0" Grid.Column="1" Name="Hay" TextWrapping="Wrap" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18"/>
             <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Granulés : " Foreground="White" FontSize="14" HorizontalAlignment="Center"  Height="18" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="Granule" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18" Margin="0,0,0,11"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="Granule" TextWrapping="Wrap"  Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18" Margin="0,0,0,11"/>
             <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="Filets " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <TextBox Grid.Row="2" Grid.Column="1" x:Name="Briddle" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
             <TextBlock Grid.Row="3" Grid.Column="0" TextWrapping="Wrap" Text="Selles " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <TextBox Grid.Row="3" Grid.Column="1" x:Name="Saddle" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left"  Height="18" Margin="0,0,0,11"/>
-            <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Couverture : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" TextWrapping="Wrap" Text="Couvertures : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Grid.Row="4" Grid.Column="1" x:Name="Blanket" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
-            <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Etrier : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" TextWrapping="Wrap" Text="Etriers : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Grid.Row="5" Grid.Column="1" x:Name="Stirrup" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
-            <TextBlock Grid.Row="6" Grid.Column="0" TextWrapping="Wrap" Text="Etriviére : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Row="6" Grid.Column="0" TextWrapping="Wrap" Text="Etrivières : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Grid.Row="6" Grid.Column="1" x:Name="StirrupStraps" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
             <TextBlock Grid.Row="7" Grid.Column="0" TextWrapping="Wrap" Text="Tapis : " Foreground="White" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Grid.Row="7" Grid.Column="1" x:Name="SaddlePad" TextWrapping="Wrap" Text="2" Width="120" VerticalAlignment="Center" HorizontalAlignment="Left" Height="18"/>
