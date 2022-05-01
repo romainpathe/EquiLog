@@ -14,7 +14,9 @@ namespace EquiLog.Windows
             Rider_controller.InitRiderList();
             Equidae_controller.InitEquideaList();
             Storage_controller.InitStorageList();
-            fContainer.Navigate(new System.Uri("../Pages/Staff/Index.xaml", UriKind.RelativeOrAbsolute));
+            Planning_controller.InitPlanning();
+            Planning_controller.InitHours();
+            fContainer.Navigate(new System.Uri("../Pages/Home.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void BG_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -91,23 +93,6 @@ namespace EquiLog.Windows
             Popup.IsOpen = false;
         }
 
-        private void btnOrderList_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (Tg_Btn.IsChecked == false)
-            {
-                Popup.PlacementTarget = btnOrderList;
-                Popup.Placement = PlacementMode.Right;
-                Popup.IsOpen = true;
-                Header.PopupText.Text = "Order List";
-            }
-        }
-
-        private void btnOrderList_MouseLeave(object sender, MouseEventArgs e)
-        {
-            Popup.Visibility = Visibility.Collapsed;
-            Popup.IsOpen = false;
-        }
-
         private void btnPlanning_MouseEnter(object sender, MouseEventArgs e)
         {
             if (Tg_Btn.IsChecked == false)
@@ -141,23 +126,7 @@ namespace EquiLog.Windows
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;
         }
-
-        private void btnSecurity_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (Tg_Btn.IsChecked == false)
-            {
-                Popup.PlacementTarget = btnSecurity;
-                Popup.Placement = PlacementMode.Right;
-                Popup.IsOpen = true;
-                Header.PopupText.Text = "Security";
-            }
-        }
-
-        private void btnSecurity_MouseLeave(object sender, MouseEventArgs e)
-        {
-            Popup.Visibility = Visibility.Collapsed;
-            Popup.IsOpen = false;
-        }
+        
         private void btnSetting_MouseEnter(object sender, MouseEventArgs e)
         {
             if (Tg_Btn.IsChecked == false)

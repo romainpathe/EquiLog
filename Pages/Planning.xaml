@@ -7,18 +7,8 @@
       mc:Ignorable="d"
       Title="Home">
     <Border CornerRadius="5" Background="{DynamicResource SecundaryBackgroundColor}">
-        <Grid ShowGridLines="True">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" Text="Nom de l'équidé"></TextBlock>
+        <Grid Name="Plan" ShowGridLines="True">
+            
         </Grid>
     </Border>
 </Page>

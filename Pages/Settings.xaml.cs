@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using EquiLog.Classes;
+using EquiLog.Controllers;
 
 namespace EquiLog.Pages
 {
@@ -16,5 +17,11 @@ namespace EquiLog.Pages
         {
             Configuration_Controller.ChangeRegistrationValue();
         }
+        
+        private void RemovePlanningButton_Click(object sender, RoutedEventArgs e)
+        {
+            Planning_controller.planning.RemoveAll(x=> x.Equidea_id != null);
+        }
+        
     }
 }

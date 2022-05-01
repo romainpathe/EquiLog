@@ -1,0 +1,77 @@
+﻿[
+  {
+    "Id": 1,
+    "Hours": 8,
+    "Columns": 1
+  },
+  {
+    "Id": 2,
+    "Hours": 9,
+    "Columns": 2
+  },
+  {
+    "Id": 3,
+    "Hours": 10,
+    "Columns": 3
+  },
+  {
+    "Id": 4,
+    "Hours": 11,
+    "Columns": 4
+  },
+  {
+    "Id": 5,
+    "Hours": 12,
+    "Columns": 5
+  },
+  {
+    "Id": 6,
+    "Hours": 13,
+    "Columns": 6
+  },
+  {
+    "Id": 7,
+    "Hours": 14,
+    "Columns": 7
+  },
+  {
+    "Id": 8,
+    "Hours": 15,
+    "Columns": 8
+  },
+  {
+    "Id": 9,
+    "Hours": 16,
+    "Columns": 9
+  },
+  {
+    "Id": 10,
+    "Hours": 17,
+    "Columns": 10
+  },
+  {
+    "Id": 11,
+    "Hours": 18,
+    "Columns": 11
+  },
+  {
+    "Id": 12,
+    "Hours": 19,
+    "Columns": 12
+  },
+  {
+    "Id": 13,
+    "Hours": 20,
+    "Columns": 13
+  },
+  {
+    "Id": 14,
+    "Hours": 21,
+    "Columns": 14
+  },
+  {
+    "Id": 15,
+    "Hours": 22,
+    "Columns": 15
+  }
+]
