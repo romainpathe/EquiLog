@@ -55,16 +55,16 @@
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Staff" VerticalAlignment="Center"/>
                         </Button>
                         <Button x:Name="btnRiders" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnRiders_MouseEnter" MouseLeave="btnRiders_MouseLeave" Click="BtnRiders_OnClick">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Rider" VerticalAlignment="Center"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Rider" VerticalAlignment="Center"/>
                         </Button>
                         <Button x:Name="btnEquidea" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnEquidea_MouseEnter" MouseLeave="btnEquidea_MouseLeave" Click="BtnEquidea_OnClick">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Equidea" VerticalAlignment="Center"/>
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource dashboard}" IconWidth="16" Text="Equidea" VerticalAlignment="Center"/>
                         </Button>
                         <Button x:Name="btnOrderList" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnOrderList_MouseEnter" MouseLeave="btnOrderList_MouseLeave">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource email}" IconWidth="16" Text="Order List" VerticalAlignment="Center"/>
                         </Button>
-                        <Button x:Name="btnBilling" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnBilling_MouseEnter" MouseLeave="btnBilling_MouseLeave">
-                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource billing}" IconWidth="16" Text="Billing" VerticalAlignment="Center"/>
+                        <Button x:Name="btnPlanning" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnPlanning_MouseEnter" MouseLeave="btnPlanning_MouseLeave" Click="BtnPlanning_OnClick">
+                            <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource products}" IconWidth="16" Text="Planning" VerticalAlignment="Center"/>
                         </Button>
                         <Button x:Name="btnStorage" Style="{DynamicResource PopupButtonStyle}"  MouseEnter="btnStorage_MouseEnter" MouseLeave="btnStorage_MouseLeave" Click="BtnStorage_OnClick">
                             <ctls:MenuItem GroupName="MenuItem" IndicatorBrush="{DynamicResource PrimaryBlueColor}" Icon="{DynamicResource car}" IconWidth="16" Text="Storage" VerticalAlignment="Center"/>

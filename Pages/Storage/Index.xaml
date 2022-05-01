@@ -42,7 +42,7 @@
                     <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
                 
-                <Button Grid.Row="0" Name="Btn_Add" Width="200" Height="80" Visibility="Hidden" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un&#x0a; inventaire" FontSize="17" Click="Btn_Add_OnClick" ClickMode="Press" Background="Transparent" >
+                <Button Grid.Row="0" Name="Btn_Add" Width="200" Height="80" VerticalAlignment="Top" Margin="10" BorderBrush="White" Opacity="0.7" Foreground="White" Content="Ajouter un&#x0a; inventaire" FontSize="17" Click="Btn_Add_OnClick" ClickMode="Press" Background="Transparent" >
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="10"/>

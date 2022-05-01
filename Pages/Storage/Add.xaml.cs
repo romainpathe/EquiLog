@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using EquiLog.Controllers;
@@ -12,14 +13,11 @@ namespace EquiLog.Pages.Storage
         public Add()
         {
             InitializeComponent();
-
+            Hay.Text = Storage_controller.storageList.Last().Hay.ToString();
         }
         private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
         {
             
-
-            //Hay.Text= Storage_controller.storageList.Last().Hay; marche pas 
-
 
             /*if (firstname.Text == "")
             {

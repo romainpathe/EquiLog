@@ -82,6 +82,9 @@
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Planning.xaml.cs">
+      <DependentUpon>Planning.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Rider\Add.xaml.cs">
       <DependentUpon>Add.xaml</DependentUpon>
     </Compile>
@@ -128,6 +131,7 @@
     <Page Include="Pages\Equidea\Add.xaml" />
     <Page Include="Pages\Equidea\Index.xaml" />
     <Page Include="Pages\Home.xaml" />
+    <Page Include="Pages\Planning.xaml" />
     <Page Include="Pages\Rider\Add.xaml" />
     <Page Include="Pages\Rider\Index.xaml" />
     <Page Include="Pages\Settings.xaml" />
@@ -159,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\icone.ico" />
+    <Content Include="Resources\database\planning.json" />
     <Content Include="Resources\database\storage.json" />
     <Resource Include="Assets\icone.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

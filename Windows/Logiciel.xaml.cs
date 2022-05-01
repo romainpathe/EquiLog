@@ -108,18 +108,18 @@ namespace EquiLog.Windows
             Popup.IsOpen = false;
         }
 
-        private void btnBilling_MouseEnter(object sender, MouseEventArgs e)
+        private void btnPlanning_MouseEnter(object sender, MouseEventArgs e)
         {
             if (Tg_Btn.IsChecked == false)
             {
-                Popup.PlacementTarget = btnBilling;
+                Popup.PlacementTarget = btnPlanning;
                 Popup.Placement = PlacementMode.Right;
                 Popup.IsOpen = true;
-                Header.PopupText.Text = "Billing";
+                Header.PopupText.Text = "Planning";
             }
         }
 
-        private void btnBilling_MouseLeave(object sender, MouseEventArgs e)
+        private void btnPlanning_MouseLeave(object sender, MouseEventArgs e)
         {
             Popup.Visibility = Visibility.Collapsed;
             Popup.IsOpen = false;
@@ -212,6 +212,10 @@ namespace EquiLog.Windows
         private void BtnStorage_OnClick(object sender, RoutedEventArgs e)
         {
             fContainer.Navigate(new System.Uri("../Pages/Storage/Index.xaml", UriKind.RelativeOrAbsolute));
+        }
+        private void BtnPlanning_OnClick(object sender, RoutedEventArgs e)
+        {
+            fContainer.Navigate(new System.Uri("../Pages/Planning.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }
