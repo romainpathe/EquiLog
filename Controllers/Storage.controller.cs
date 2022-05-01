@@ -22,7 +22,7 @@ namespace EquiLog.Controllers
         public static void AddStorage(Storage_model storage)
         {
             storageList.Add(storage);
-            //storageList.Last().Hay;
+            //storageList.Last().Hay; 
         }
         
         private static void SaveStorageList()
