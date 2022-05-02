@@ -20,7 +20,6 @@
             <ListView Grid.Row="0" Grid.Column="0" Name="dgUsers" Margin="5">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" />
                         <GridViewColumn Header="Foin" DisplayMemberBinding="{Binding Hay}" />
                         <GridViewColumn Header="Granulés" DisplayMemberBinding="{Binding Granule}" />
                         <GridViewColumn Header="Filets" DisplayMemberBinding="{Binding Briddle}" />
