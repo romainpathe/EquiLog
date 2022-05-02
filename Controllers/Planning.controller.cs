@@ -30,6 +30,12 @@ namespace EquiLog.Controllers
             UpdatePlanning();
         }
         
+        public static void ClearPlanning()
+        {
+            planning.Clear();
+            UpdatePlanning();
+        }
+        
         public static void InitHours()
         {
             var srConfig = new StreamReader("../../Resources/database/hours.json");

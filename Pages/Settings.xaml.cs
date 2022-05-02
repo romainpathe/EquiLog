@@ -1,7 +1,9 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 using EquiLog.Classes;
 using EquiLog.Controllers;
+using EquiLog.Models;
 using EquiLog.Windows;
 
 namespace EquiLog.Pages
@@ -21,7 +23,7 @@ namespace EquiLog.Pages
         
         private void RemovePlanningButton_Click(object sender, RoutedEventArgs e)
         {
-            Planning_controller.planning.RemoveAll(x=> x.Equidea_id != null);
+            Planning_controller.ClearPlanning();
         }
 
         private void AddCourse_OnClick(object sender, RoutedEventArgs e)
