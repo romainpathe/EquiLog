@@ -13,7 +13,7 @@ namespace EquiLog.Models
         public int StirrupStraps { get; set; }
         public int Stirrup { get; set; }
        
-        public Storage_model(int hay,int saddle, int briddle, int granule, int blanket, int saddlepad, int stirrupstraps, int stirrup)
+        public Storage_model(int hay, int granule, int briddle, int saddle, int blanket, int stirrup, int stirrupstraps, int saddlepad)
         {
             Hay = hay;
             Saddle = saddle;    
