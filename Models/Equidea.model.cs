@@ -1,6 +1,4 @@
-﻿using System.Runtime.Remoting.Messaging;
-
-namespace EquiLog.Models
+﻿namespace EquiLog.Models
 {
     public class Equidea_model
     {

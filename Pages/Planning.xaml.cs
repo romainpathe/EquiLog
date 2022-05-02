@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -27,7 +28,6 @@ namespace EquiLog.Pages
             grid = new Grid();
             grid.ShowGridLines = true;
             Planning_controller.InitPlanning();
-            var x = Planning_controller.planning;
             displayHeader();
             displayEquidea();
             displayRider();
@@ -83,19 +83,19 @@ namespace EquiLog.Pages
         {
             TextBlock textBlock;
 
-            foreach (var data in Planning_controller.planning)
+            foreach (var data in Planning_controller.planning.ToList())
             {
-                var rider = Rider_controller.riderList.Find(x => x.Id == data.Rider_id);
+                var rider = Rider_controller.riderList.ToList().Find(x => x.Id == data.Rider_id);
                 Debug.WriteLine("RIDER: "+rider);
                 if (rider != null)
                 {
-                    var equidea = Equidae_controller.equideaList.Find(x=>x.Id == data.Equidea_id);
+                    var equidea = Equidae_controller.equideaList.ToList().Find(x=>x.Id == data.Equidea_id);
                     Debug.WriteLine("EQUIDEA: "+equidea);
                     if (equidea != null)
                     {
-                        var index = Equidae_controller.equideaList.IndexOf(equidea);
+                        var index = Equidae_controller.equideaList.ToList().IndexOf(equidea);
                         Debug.WriteLine("INDEX: "+index);
-                        var hours = Planning_controller.Hours.Find(x => x.Id == data.Hours_id);
+                        var hours = Planning_controller.Hours.ToList().Find(x => x.Id == data.Hours_id);
                         Debug.WriteLine("HOURS: "+hours);
                         if (hours != null)
                         {
