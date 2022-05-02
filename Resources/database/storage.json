@@ -1,12 +1,12 @@
 ﻿[
   {
-    "Hay": 1,
-    "Saddle": 2,
-    "Bridle": 3,
-    "Granule": 4,
+    "Hay": 1000,
+    "Saddle": 5,
+    "Briddle": 5,
+    "Granule": 500,
     "Blanket": 5,
-    "SaddlePad": 6,
-    "Straps": 7,
-    "Stirrup": 8
+    "SaddlePad": 5,
+    "StirrupStraps": 10,
+    "Stirrup": 10
   }
 ]
